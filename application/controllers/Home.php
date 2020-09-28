@@ -42,7 +42,7 @@ $this->load->library('user_agent');
     {
         $today = date('Y-m-d');
 
-$this->output->cache(60); 
+//$this->output->cache(60); 
 $data['canonical']=base_url();
 
         $data['page_name'] = 'home';

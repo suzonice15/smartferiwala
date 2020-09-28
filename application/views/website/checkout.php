@@ -272,7 +272,7 @@ if ($user) {
                     </span>
                     </form>
                 </div>
-            </div>
+             </div>
 
             <div class="col-md-7 col">
                 <div class="card">
@@ -371,35 +371,23 @@ if ($user) {
 											<span id="cash_on_delevery_text"
                                                   style="background-color: green" class="btn btn-success btn-sm">Cash On Delivery</span></label>
 
-                                        <label> <input required class="payment_class_suzon" type="radio" id="bKash"
-                                                       name="payment_type" value="bKash"/> <span
-                                                style="background-color: green" class="btn btn-success btn-sm">Bkash Payment</span>
-                                        </label>
+                                        <label>
                                         <label> <input required class="payment_class_suzon"
                                                        style="background-color: green" class="btn btn-success btn-sm"
                                                        type="radio"
                                                        name="payment_type"
                                                        value="online"/> <span
-                                                style="background-color: green" class="btn btn-success btn-sm">Online Payment</span>
+                                                style="background-color: green" class="btn btn-success btn-sm">digital  Payment</span>
                                         </label>
 
 
                                     </div>
-                                    <div id="hide_bkash_payment" class="form-group">
-                                        <p id="bikash_eroor" class="text-danger"></p>
-                                        <p for="billing_name"
-                                           class="text-dark bold "><?= get_option('bkash_payment') ?></p>
 
-                                        <input  style="height: 43px" type="text" name="bkash_payment" value="<?php   echo set_value('bkash_payment'); ?>"
-                                               class="form-control col-12 col-md-8"
-                                               id="bkash_payment" placeholder="Enter your bkash transaction id">
-                                        <img class="bikash_transaction_logo"
-                                             src="<?= base_url() ?>images/bkahscan.png">
-                                    </div>
                                     <h5 style="margin-left: 19px;">We Accepte:<img class="logo logo-visa"
                                                                                    src="<?php echo base_url()?>/images/card-logo.png">
                                     </h5>
-                                    <input type="checkbox" required name="terms_and_conditions" id="terms_and_conditions" value="1"> I have read and agree with the <a href="<?php echo base_url()?>/pages/terms">Terms &amp; Conditions</a> </label> </p>
+                                    <input type="checkbox" required name="terms_and_conditions" id="terms_and_conditions" value="1"> I agree
+									with the  <a href="<?php echo base_url()?>/pages/terms">Terms & Condition and Privacy Policy </a> of Smart Feriwala </label> </p>
                                 </div>
                             </div>
                         
@@ -507,30 +495,7 @@ if ($user) {
 
 <script>
 
-    $('.payment_class_suzon').click(function () {
-        var payment = $(this).val();
-        if (payment == 'bKash') {
-            $('#hide_bkash_payment').show();
-
-        } else {
-            $('#hide_bkash_payment').hide();
-
-        }
-    });
-    $('#hide_bkash_payment').hide();
-
-
-    $('#bKash').click(function () {
-        var bkash = $('#bKash').val()
-        if (bkash == 'bKash') {
-            $('#hide_bkash_payment').show();
-
-        } else {
-            $('#hide_bkash_payment').hide();
-
-        }
-    });
-
+     
     $("#ship_to_billing,#billing_address1").change(function () {
 
         if ($(this).prop('checked')) {

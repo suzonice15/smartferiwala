@@ -49,20 +49,59 @@ color: black;"><span id="total_amount_bag"><?php echo $cart_total; ?></span> <sp
             <div class="row no-gutters">
                 <div class="col-lg-12  col-md-12 row xs-footer-info-and-payment">
 
-                    <div class="col-lg-4 col-md-6 media">
-                        <span class="icon icon-support color-yellow d-flex"></span>
-                        <div class="media-body">
-                            <h5>Got Question? Call us 24/7 <strong><?= get_option('phone') ?></strong></h5>
-                            <address>
-                               House 13B,Block B <br/>
-                               2nd Colony,Mazar Road<br/> Dhaka-1216, Bangladesh
-                            </address>
-                            <a style="background-color: green"
-                               href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.150962101775!2d90.34543732504021!3d23.798126838263272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1d452b5f22b%3A0x76a65b2cdb420617!2sekusheyshop.com!5e0!3m2!1sen!2sbd!4v1579498263210!5m2!1sen!2sbd"
-                               class="xs-map-popup btn btn-success btn-sm"><i class="icon icon-placeholder"></i>View On
-                                Map</a>
-                        </div>
-                    </div><!-- .media END -->
+					<div class=" col-lg-2 col-md-6  col-12 footer-widget">
+						<h5 style="margin-bottom: -3px;">Ekusheshop</h5>
+
+						<ul class="xs-list" style="margin-bottom: 10px;">
+
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/about-us">About US</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/contact-us">Contact US</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/privacy-policy">Privacry Policy</a></li>
+
+
+						</ul><!-- .xs-list END -->
+
+						<h5 style="margin-bottom: -3px;">Earn with us</h5>
+
+						<ul class="xs-list">
+							<li><a  style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>affiliate/login_signup">Join Affiliate Program</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-program">Affiliate Program</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-faq">Affiliate FQA</a></li>
+
+
+						</ul><!-- .xs-list END -->
+					</div><!-- .footer-widget END -->
+
+					<div class=" col-lg-2 col-md-6 col-12 footer-widget">
+						<h5 style="margin-bottom: -3px;">Customer Care</h5>
+
+
+						<ul class="xs-list">
+
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/terms-conditions">Terms and Conditions</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/return-refund-policy">Return and
+									Refund Policy</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/track-your-order">Track Your
+									Order</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to buy</a>
+							</li>
+
+
+						</ul><!-- .xs-list END -->
+						</ul><!-- .xs-list END -->
+					</div><!-- .footer-widget END -->
+
+
 
 
                     <div class="col-lg-4 col-md-6 col-12  media">
@@ -113,58 +152,23 @@ color: black;"><span id="total_amount_bag"><?php echo $cart_total; ?></span> <sp
                         </div>
                     </div><!-- .media END -->
 
-                    <div class=" col-lg-2 col-md-6  col-12 footer-widget">
-                        <h5 style="margin-bottom: -3px;">Ekusheshop</h5>
-
-                        <ul class="xs-list" style="margin-bottom: 10px;">
-
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/about-us">About US</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/contact-us">Contact US</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/privacy-policy">Privacry Policy</a></li>
-
-
-                        </ul><!-- .xs-list END -->
-
-                        <h5 style="margin-bottom: -3px;">Earn with us</h5>
-
-                        <ul class="xs-list">
-<li><a  style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>affiliate/login_signup">Join Affiliate Program</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-program">Affiliate Program</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-faq">Affiliate FQA</a></li>
+					<div class="col-lg-4 col-md-6 media">
+						<span class="icon icon-support color-yellow d-flex"></span>
+						<div class="media-body">
+							<h5>Got Question? Call us 24/7 <strong><?= get_option('phone') ?></strong></h5>
+							<address>
+								House 13B,Block B <br/>
+								2nd Colony,Mazar Road<br/> Dhaka-1216, Bangladesh
+							</address>
+							<a style="background-color: green"
+							   href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.150962101775!2d90.34543732504021!3d23.798126838263272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1d452b5f22b%3A0x76a65b2cdb420617!2sekusheyshop.com!5e0!3m2!1sen!2sbd!4v1579498263210!5m2!1sen!2sbd"
+							   class="xs-map-popup btn btn-success btn-sm"><i class="icon icon-placeholder"></i>View On
+								Map</a>
+						</div>
+					</div><!-- .media END -->
 
 
-                        </ul><!-- .xs-list END -->
-                    </div><!-- .footer-widget END -->
-
-                    <div class=" col-lg-2 col-md-6 col-12 footer-widget">
-                        <h5 style="margin-bottom: -3px;">Customer Care</h5>
-
-
-                        <ul class="xs-list">
-
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/terms-conditions">Terms and Conditions</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/return-refund-policy">Return and
-                                    Refund Policy</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/track-your-order">Track Your
-                                    Order</a></li>
-                            <li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to buy</a>
-                            </li>
-
-
-                        </ul><!-- .xs-list END -->
-                        </ul><!-- .xs-list END -->
-                    </div><!-- .footer-widget END -->
-                </div>
+				</div>
 
             </div>
         </div>
@@ -319,7 +323,7 @@ font-weight: initial;font-size: 12px;">Account</span>
 <script src="<?php echo base_url(); ?>assets/fontend/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/fontend/js/isotope.pkgd.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/fontend/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/fontend/js/owl.carousel.min.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 <script src="<?php echo base_url(); ?>assets/fontend/js/jquery.menu-aim.js"></script>
 <script src="<?php echo base_url(); ?>assets/fontend/js/vertical-menu.js"></script>
 <script src="<?php echo base_url(); ?>assets/fontend/js/tweetie.js"></script>
