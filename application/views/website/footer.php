@@ -1,37 +1,4 @@
-<div class="cart_money_icon d-print-none">
-    <?php
-    $cart_items = $cart_total = 0;
-    /*echo '<pre>'; print_r($this->cart->contents()); echo '</pre>';*/
 
-    foreach ($this->cart->contents() as $key => $val) {
-        if (!is_array($val) OR !isset($val['price']) OR !isset($val['qty'])) {
-            continue;
-        }
-
-        $cart_items += $val['qty'];
-        $cart_total += $val['subtotal'];
-
-    }
-    ?>
-    <a href="<?php echo base_url() ?>cart">
-
-        <div style="background-color: green;height: 44px;text-align: right;color: white;width: 70px;opacity: 0.7;">
-            <img style="margin-right: 9px;
-width: 33px;
-height: 37px;" src="<?php echo base_url() ?>images/bag.gif">
-            <br>
-
-            <div class="text-center">
-                <span id="total_item_bag"><?php echo $cart_items; ?> </span>
-
-            </div>
-        </div>
-        <h6 style="z-index: 9999999;
-text-align: center;
-font-size: 15px;
-color: black;"><span id="total_amount_bag"><?php echo $cart_total; ?></span> <span>Tk.</span></h6>
-    </a>
-</div>
 
 
 
@@ -599,17 +566,17 @@ font-weight: initial;font-size: 12px;">Account</span>
             if (scroll_home_menu > 30) {
                 if (windowViewPort == 1680 || heightViewPort == 992) {
 
-                    $('#sticy_menu_id').addClass('sticy_menu_id1');
+                    $('#sticy_menu_id').addClass('sticy_menu_id1x');
 
                 } else if (windowViewPort == 1280 || heightViewPort == 802) {
 
-                    $('#sticy_menu_id').addClass('sticy_menu_id');
+                    $('#sticy_menu_id').addClass('sticy_menu_idx');
 
                 } else {
-                    $('#sticy_menu_id').removeClass('sticy_menu_id');
+                    $('#sticy_menu_id').removeClass('sticy_menu_idx');
 
                 }
-                $('#sticky_class').addClass('sticky_class');
+                $('#sticky_class').addClass('sticky_classx');
                 //  $('#sticy_menu_id').addClass('sticy_menu_id');
                 $('#black_offer').hide();
                 $('#black_offer_show').show();

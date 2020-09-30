@@ -38,7 +38,7 @@ foreach ($related_products as $rel_prod) {
 
 
     ?>
-    <div class="col-md-3 col-lg-3 col-12">
+    <div class="col-md-2 col-lg-2 col-6">
         <div class="xs-product-wraper version-2">
             <div class="xs-product-header media ">
                         <span class="star-rating d-flex" style="margin-top: -29px;">
@@ -81,21 +81,20 @@ foreach ($related_products as $rel_prod) {
             </div><!-- .xs-product-content END -->
 
  <?php   if ($product_availabie  != 'Out of stock') { ?>
-            <div class="xs-product-hover-area clearfix">
-                <div style="margin-left: 123px;">
-                    <a href="#" class="btn btn-primary btn-sm  add_to_cart_releted_product"
+            <div class="category_product_hover clearfix">
+
+                    <a href="#" class="add_to_cart_releted_product"
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
                             class="icon icon-online-shopping-cart"></i>Add to Cart</a>
-                </div>
-                <div>
-                    <a href="#" class="btn btn-info btn-sm buy_now_releted_product"
+
+                    <a href="#" class="buy_now_releted_product"
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
                             class="icon icon-bag"></i>Buy Now</a>
-                </div>
+
             </div>
             
             <?php } ?>

@@ -119,7 +119,9 @@
 								&amp; Games</a>
 						</h3>
 						<div class="xs-tab-slider-6-col owl-carousel">
-							<div class="xs-product-category text-center">
+
+
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -129,9 +131,25 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
 							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -141,9 +159,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -153,9 +186,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -165,9 +213,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -177,9 +240,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -189,33 +267,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
-								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Noteboo kNotebo okNotebookN otebook BIgscreen Z51-70
-										40K6013</a></h4>
-								<span class="price">
-                                    $340.00
-                                    <del>$460.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
+								<div class="home_category_product_hover clearfix">
 
-							<div class="xs-product-category text-center">
-								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
-										40K6013</a></h4>
-								<span class="price">
-                                    $340.00
-                                    <del>$460.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
 
-							<div class="xs-product-category text-center">
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -225,9 +294,24 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
-							<div class="xs-product-category text-center">
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
@@ -237,64 +321,25 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
 
+								<div class="home_category_product_hover clearfix">
 
-							<div class="xs-product-category text-center">
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
 								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Smartphone 6S 64GB LTE</a></h4>
-								<span class="price">
-                                    $503.00
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Samsung BIgscreen Z51-70
-										40K6013</a></h4>
-								<span class="price">
-                                    $360.00
-                                    <del>$500.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Apple MacBook Pro 13-inch
-										Laptop</a></h4>
-								<span class="price">
-                                    $235.00
-                                    <del>$290.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Notebook Purple
-										G952VX-T7008T</a></h4>
-								<span class="price">
-                                    $470.00
-                                    <del>$490.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Mackbook PC- V2
-										43535VX-TZAS</a></h4>
-								<span class="price">
-                                    $360.00
-                                    <del>$500.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
 								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
@@ -303,63 +348,894 @@
                                     $340.00
                                     <del>$460.00</del>
                                 </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
 							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
 									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Apple MacBook Pro 13-inch
-										Laptop</a></h4>
-								<span class="price">
-                                    $235.00
-                                    <del>$290.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Notebook Purple
-										G952VX-T7008T</a></h4>
-								<span class="price">
-                                    $470.00
-                                    <del>$490.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Mackbook PC- V2
-										43535VX-TZAS</a></h4>
-								<span class="price">
-                                    $360.00
-                                    <del>$500.00</del>
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Smartphone 6S 64GB LTE</a></h4>
-								<span class="price">
-                                    $503.00
-                                </span>
-							</div><!-- .xs-product-category text-center END -->
-							<div class="xs-product-category text-center">
-								<img src="assets/images/image_loader.gif"
-									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
-									 alt="Mobile">
-								<h4 class="product-title"><a href="product-details.html">Samsung BIgscreen Z51-70
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
 										40K6013</a></h4>
 								<span class="price">
-                                    $360.00
-                                    <del>$500.00</del>
+                                    $340.00
+                                    <del>$460.00</del>
                                 </span>
-							</div><!-- .xs-product-category text-center END -->
-						</div><!-- .xs-tab-slider-6-col END -->
 
-					</div><!-- #newArrival-nSale END -->
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+							<div class="xs-product-wraper version-2">
+								<img src="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 data-echo="https://www.sohojbuy.com/public/uploads/483/thumb/483.bag.jpg"
+									 alt="Mobile">
+								<h4 class="product-title"><a href="product-details.html">Notebook BIgscreen Z51-70
+										40K6013</a></h4>
+								<span class="price">
+                                    $340.00
+                                    <del>$460.00</del>
+                                </span>
+
+								<div class="home_category_product_hover clearfix">
+
+									<a href="#" class="home_add_to_cart_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+
+									<a href="#" class="home_buy_now_releted_product"
+									   data-product_id="<?= $rel_prod->product_id ?>"
+									   data-product_price="<?= $sell_price ?>"
+									   data-product_title="<?= $_product_title ?>"><i
+											class="icon icon-bag"></i>Buy Now</a>
+
+								</div>
+							</div><!-- .xs-product-category text-center END -->
+
+
+
+
+						</div><!-- #newArrival-nSale END -->
+				</div>
+				</div>
 				</div>
 
 
@@ -375,7 +1251,7 @@
 	$(document).ready(function () {
 		$('.owl-carousel').owlCarousel({
 			loop: true,
-			margin: 10,
+			margin: 0,
 			responsiveClass: true,
 			responsive: {
 				0: {

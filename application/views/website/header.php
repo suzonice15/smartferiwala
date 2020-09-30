@@ -183,92 +183,52 @@ foreach ($this->cart->contents() as $key => $val) {
 					</div>
 
 				</div>
-				<div class=" justify-content-center  col-lg-6 col-sm-3 xs-order-3 xs-menus-group ">
-					<nav class="xs-menus">
-						<div class="nav-header">
-							<div class="nav-toggle"></div>
-						</div><!-- .nav-header END -->
-						<div class="nav-menus-wrapper hide_class_suzon ">
-							<style>
-								.hide_class_suzon ul li a:hover{color:red !important;}
-							</style>
-
-							<ul class="nav-menu top_menu_style">
-								<li><a href="<?php echo base_url(); ?>">Home</a>
+				<div class="justify-content-center  col-lg-7 col-sm-3 xs-order-3 xs-menus-group ">
+					<form class="xs-navbar-search" method="get" action="<?php echo base_url() ?>search">
+						<div class="input-group ">
+							<input type="text" name="q" id="seachId" class="form-control"
+								   placeholder="Find your products" autocomplete="off">
 
 
-									<!---->
-									<!---->
-									<!--                                <li><a href="--><?php //echo base_url(); ?><!--all-products">All Products</a>-->
-								<li><a href="<?php echo base_url(); ?>pages/contact-us">Contact us</a>
-								<li><a href="<?php echo base_url(); ?>pages/affiliate-program">Affiliate</a>
+							<div class="input-group-btn">
+
+								<button type="submit" class="btn btn-xs btn-success"><i class="fa fa-search"
+																						style="margin-top: 2px;"></i></button>
+
+							</div>
 
 
-								</li>
-								<li><a href="<?php echo base_url(); ?>chechout">Checkout</a>
+						</div>
+						<div class="search_div_section" style="background-color: rgb(255, 255, 255);height: 410px;overflow: scroll;">
+							<table id="table_click_hide" class="table table-bordered" style="background-color: #fff;">
 
-								<li><a href="<?php echo base_url(); ?>affiliate/my_account">My Account</a>
-
-
-								</li>
-							</ul>
-						</div><!-- .nav-menus-wrapper END -->
-					</nav><!-- .xs-menus END -->
-				</div>
-
-				<div class="col-lg-2 col-sm-3 xs-order-3 xs-menus-group">
-					<nav class="xs-menus">
-
-						<br>
-						<ul class="xs-header-info">
-							<li class="d-none d-md-none d-lg-block" style="color:#FF0066;margin-top:15px"><img
-									style="margin-top: -9px;" width="35px"
-									src="<?php echo base_url() ?>images/phone.gif"><span style="font-size: 17px;
-font-family: " Courier New ", Courier, monospace;"> <?php echo get_option('phone') ?></span></li>
-						</ul>
+								<tbody id="searching_data">
 
 
-					</nav><!-- .xs-menus END -->
-				</div>
-				<div class="col-lg-2 col-sm-5 xs-order-2 xs-wishlist-group">
-					<div class="xs-wish-list-item">
-						<ul class="xs-header-info">
-							<li class="d-none d-md-none d-lg-block" style="margin-top: 17px;margin-right: 43px;">
-
-								<a style="background-color: green;margin-top: -11px;"
-								   href="<?php echo base_url() ?>pages/track-your-order" class="btn btn-success  btn-sm  "><i
-										class="icon icon-van"></i>Track
-									Order</a>
-
-							</li>
-						</ul>
-
-						<div class="dropdown dropright xs-miniCart-dropdown">
-							<a href="#" class="xs-single-wishList offset-cart-menu">
-								<?php
-								$cart_items = $cart_total = 0;
-								/*echo '<pre>'; print_r($this->cart->contents()); echo '</pre>';*/
-
-								foreach ($this->cart->contents() as $key => $val) {
-									if (!is_array($val) OR !isset($val['price']) OR !isset($val['qty'])) {
-										continue;
-									}
-
-									$cart_items += $val['qty'];
-									$cart_total += $val['subtotal'];
-
-								}
-								?>
-
-								<span hidden class="xs-item-count highlight"><?php if ($cart_items > 0) {
-										echo $cart_items;
-									} ?></span>
-
-								<i hidden class="icon icon-bag"></i>
-							</a>
+								</tbody>
+							</table>
 						</div>
 
+					</form>
+
+				</div>
+
+
+				<div class="col-lg-3 col-sm-5 xs-order-2 xs-wishlist-group">
+					<div class="" style="
+    float: right;
+    margin-top: 35px;
+">
+						<a href=""><img style="margin-right: 15px;width: 30px;" src="<?=base_url()?>images/cart.png"></a>
+						<a href=""><img src="<?=base_url()?>images/track.png"></a>
+						<a href=""><img  style="
+    margin-left: 12px;width:30px
+"src="<?=base_url()?>images/user.png"></a>
+
 					</div>
+
+
+
 				</div>
 			</div><!-- .row END -->
 		</div><!-- .container END -->
@@ -277,10 +237,8 @@ font-family: " Courier New ", Courier, monospace;"> <?php echo get_option('phone
 	<!-- nav down section -->
 	<div class="xs-navDown v-yellow" id="sticky_class">
 		<div class="container container-fullwidth" id="top_category_menu">
-			<div class="row">
+			<div class="row" style="z-index:0;border: 1px solid #ddd;height: 62px;border-left: none;border-right: navajowhite;">
 				<div class="col-lg-3 col-xl-3  d-none d-md-none d-lg-block">
-					<!-- vertical menu bar -->
-					<a class="home_icon_class" href="<?php echo base_url() ?>"> <i class="fa fa-fw fa-home"></i></a>
 
 					<div class="cd-dropdown-wrapper xs-vartical-menu v-gray" id="sticy_menu_id">
 						<a class="cd-dropdown-trigger" href="#0">
@@ -382,58 +340,36 @@ font-family: " Courier New ", Courier, monospace;"> <?php echo get_option('phone
 						</nav> <!-- .cd-dropdown -->
 					</div>
 				</div>
-				<div class="col-lg-5 col-xl-6 ">
-					<form class="xs-navbar-search" method="get" action="<?php echo base_url() ?>search">
-						<div class="input-group ">
-							<input type="text" name="q" id="seachId" class="form-control"
-								   placeholder="Find your products" autocomplete="off">
+				<div class="col-lg-6 col-xl-6 ">
+
+					<nav class="xs-menus">
+						<div class="nav-header">
+							<div class="nav-toggle"></div>
+						</div><!-- .nav-header END -->
+						<div class="nav-menus-wrapper hide_class_suzon" style="transition-property: none;margin-left: -108px;margin-top: -23px;">
+							<style>
+								.hide_class_suzon ul li a:hover{color:red !important;}
+							</style>
+
+							<ul class="nav-menu top_menu_style">
+								 		<li><a href="<?php echo base_url(); ?>pages/contact-us">Follow us on FACEBOOK</a>
+								<li><a href="<?php echo base_url(); ?>pages/affiliate-program">Watch Reviews on YOUTUBE</a>
 
 
-							<div class="input-group-btn ">
-
-								<button type="submit" class="btn btn-success"><i class="fa fa-search"
-																				 style="margin-top: 7px;"></i></button>
-
-							</div>
+								</li>
+								<li><a href="<?php echo base_url(); ?>chechout">HOT Deals</a>
 
 
-						</div>
-						<div class="search_div_section" style="background-color: rgb(255, 255, 255);height: 410px;overflow: scroll;">
-							<table id="table_click_hide" class="table table-bordered" style="background-color: #fff;">
+							</ul>
+						</div><!-- .nav-menus-wrapper END -->
+					</nav><!-- .xs-menus END -->
 
-								<tbody id="searching_data">
-
-
-								</tbody>
-							</table>
-						</div>
-
-					</form>
 				</div>
-				<div class="col-lg-4 col-xl-3 d-none d-md-none d-lg-block">
-					<a id="black_offer" target="_blank" href="<?= get_option('home_pomosion_link') ?>"
-					   class="btn btn-outline-primary btn-lg">
-						<strong><?= get_option('home_pomosion_title') ?></strong>
-						<?= get_option('home_pomosion_sub_title') ?>
-					</a>
-					<div id="black_offer_show" style="margin-top:20px">
-						<img style="margin-top: -9px;" width="25px" src="<?php echo base_url() ?>images/phone.gif"><b
-							style="font-size: 15px;
-margin-right: 32px;;
-font-family: " Courier New", Courier, monospace;"> <?php echo get_option('phone') ?></b>
-						</li>
+				<div class="col-lg-3 col-xl-3 d-none d-md-none d-lg-block">
 
 
-						<a style="color:white !important;style;background-color: green"
-						   href="<?php echo base_url() ?>pages/trackorder"
-						   class="btn btn-success  btn-sm col-lg-2 sticky_hover_track_order">
-							<i class="icon icon-van"></i>
+						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif">01300884747 (AM to 10 PM - Everyday)</p>
 
-							Track
-							Order</a>
-
-
-					</div>
 
 
 				</div><!-- .row END -->

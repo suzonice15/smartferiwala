@@ -60,7 +60,7 @@ $product_availabie = $product->product_availability;
                                              ?>
 
 
-                                            <div class="col-md-3 col-lg-3 col-6">
+                                            <div class="col-md-2 col-lg-2 col-sm-4 col-6">
                                                 <div class="xs-product-wraper version-2">
                                                     <div class="xs-product-header media">
                         <span class="star-rating d-flex" style="margin-top: -29px;">
@@ -97,21 +97,20 @@ $product_availabie = $product->product_availability;
                         </span>
                                                     </div><!-- .xs-product-content END -->
  <?php   if ($product_availabie != 'Out of stock') { ?>
-                                                    <div class="xs-product-hover-area clearfix">
-                                                        <div style="margin-left: 123px;">
-                                                            <a href="#" class="btn btn-primary btn-sm  add_to_cart"
+                                                    <div class="category_product_hover clearfix">
+
+                                                            <a href="#" class="add_to_cart_releted_product"
                                                                data-product_id="<?= $product->product_id ?>"
                                                                data-product_price="<?= $sell_price ?>"
                                                                data-product_title="<?= $product_title ?>"><i
                                                                     class="icon icon-online-shopping-cart"></i>Add to Cart</a>
-                                                        </div>
-                                                        <div>
-                                                            <a href="#" class="btn btn-info btn-sm buy_now"
+
+                                                            <a href="#" class="buy_now_releted_product"
                                                                data-product_id="<?= $product->product_id ?>"
                                                                data-product_price="<?= $sell_price ?>"
                                                                data-product_title="<?= $product_title ?>"><i
                                                                     class="icon icon-bag"></i>Buy Now</a>
-                                                        </div>
+
                                                     </div>
                                                     
                                                     <?php } ?>

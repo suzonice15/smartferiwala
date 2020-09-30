@@ -93,7 +93,6 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 .buy_now_single{}
 .top_menu_style{font-family:sans-serif;margin-left:95px;position:relative;text-transform:uppercase;}
 .category_bold{font-weight:bold;}
-.add_to_cart_releted_product{background-color:green;margin-left:-124px;padding:9px 5px;color:white;width:100px;text-align:center;}
 #searching_data{display:none}
 @media (min-width:1300px){.container-fullwidth{padding-left:4%;padding-right:4%;max-width:100%;}
 }
@@ -120,3 +119,56 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 #ddd;z-index:999999;width:72px;height:70px;display:none;}
 .search_div_section{display:none}
 }
+
+
+
+/*   hover  category related serarch product category */
+.category_product_hover{display: block;
+	position: absolute;
+	bottom:6px;
+	left: 2px;
+}
+.add_to_cart_releted_product{    display: inline;width:50%;background-color:green;padding:9px 5px;color:white;text-align:center;}
+.add_to_cart_releted_product:hover{background-color:green;padding:9px 5px;color:white;text-align:center;}
+
+.buy_now_releted_product{    display: inline;width:50%;background-color: red;
+	padding: 9px 9px;
+	color: white;
+	text-align: center;
+	margin-left: -4px;}
+
+.buy_now_releted_product:hover{background-color:red;
+	padding: 9px 9px;
+	color: white;
+	text-align: center;
+	margin-left: -4px;}
+
+
+.xs-product-wraper:hover .category_product_hover{display:block}
+
+
+
+
+/*   hover  home product category */
+.home_category_product_hover{display: none;
+	position: absolute;
+	bottom:6px;
+	left: 2px;
+}
+.home_add_to_cart_releted_product{    display: inline;width:50%;background-color:green;padding:9px 5px;color:white;text-align:center;}
+.home_add_to_cart_releted_product:hover{background-color:green;padding:9px 5px;color:white;text-align:center;}
+
+.home_buy_now_releted_product{    display: inline;width:50%;background-color: red;
+	padding: 9px 5px;
+	color: white;
+	text-align: center;
+	margin-left: -4px;}
+
+.home_buy_now_releted_product:hover{background-color:red;
+	padding: 9px 9px;
+	color: white;
+	text-align: center;
+	margin-left: -4px;}
+
+
+.xs-product-wraper:hover .category_product_hover{display:block}

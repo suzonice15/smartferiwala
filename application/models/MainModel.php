@@ -272,22 +272,21 @@ class MainModel extends CI_Model
  
  if ($product_availabie != 'Out of stock') {
      
-     $product_hover='<div class="xs-product-hover-area clearfix col-12">
-													<div  style="margin-left: 123px;" >
-														<a href="#" class="btn btn-primary btn-sm  add_to_cart"
+     $product_hover='<div class="category_product_hover clearfix">
+												
+														<a href="#" class="add_to_cart_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
 														   data-product_title="' . $row->product_title . '" ><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
-													</div>
-													<div>
-														<a href="#" class="btn btn-info btn-sm buy_now"
+												
+														<a href="#" class="buy_now_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
 														   data-product_title="' . $row->product_title . '"><i class="icon icon-bag"></i>Buy Now</a>
-					                            </div>
+					                           
 					</div>';
  }
 
 
-                $output .= '<div class="col-md-6 col-lg-3  col-sm-12 col-12">
+                $output .= '<div class="col-md-2 col-lg-2  col-sm-6 col-6">
                                         <div class="xs-product-wraper version-2">
                                             <div class="xs-product-header media">
                         <span class="star-rating d-flex" style="margin-top: -29px;">
