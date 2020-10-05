@@ -146,7 +146,7 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
                 <div class="col-md-12 col-lg-7 col-12">
                     <div class="xs-copyright-text" style="color:#ffffff">
                         ©  <?= get_option('copyright') ?>
-                        Developed by <a target="_blank " style="color:#ffffff" href="https://www.isolutionsbd.com/">isolutions</a>
+
                     </div>
                     <!-- .xs-copyright-text END -->
                 </div>
@@ -524,15 +524,8 @@ font-weight: initial;font-size: 12px;">Account</span>
 
 <script>
 
-    $('body').click(function () {
-        // $("#table_click_hide").hide();
-      //  $("#table_mobile_click_hide").toggle();
-       // $("#searching_data").hide();
-
-    });
      $('body').click(function () {
-        // $("#table_click_hide").hide();
-        //$("#table_mobile_click_hide").toggle();
+
         $(".search_div_section").hide();
 
     });
@@ -548,47 +541,32 @@ font-weight: initial;font-size: 12px;">Account</span>
         gallery: "gallery_09",
         galleryActiveClass: "active"
     });
-    $('#black_offer').show();
-    $('#black_offer_show').hide();
-    $('.home_icon_class').hide();
+
     $(document).ready(function () {
 
        $(window).scroll(function () {
 
                 var scroll_home_menu = $(window).scrollTop();
-           // var scroll_home_menu = $("body").scrollTop();
-         //   var window = screen.width;
+
             var windowViewPort =   jQuery(window).width()
             var heightViewPort = $(window).height();
 
             $('.home_icon_class').show();
+		   if (windowViewPort >992) {
+            if (scroll_home_menu > 10) {
 
-            if (scroll_home_menu > 30) {
-                if (windowViewPort == 1680 || heightViewPort == 992) {
 
-                    $('#sticy_menu_id').addClass('sticy_menu_id1x');
 
-                } else if (windowViewPort == 1280 || heightViewPort == 802) {
+					$('.xs-header').addClass('desktop_new_sticky_class');
 
-                    $('#sticy_menu_id').addClass('sticy_menu_idx');
 
-                } else {
-                    $('#sticy_menu_id').removeClass('sticy_menu_idx');
+				} else {
 
-                }
-                $('#sticky_class').addClass('sticky_classx');
-                //  $('#sticy_menu_id').addClass('sticy_menu_id');
-                $('#black_offer').hide();
-                $('#black_offer_show').show();
+				$('.xs-header').removeClass('desktop_new_sticky_class');
 
-            } else {
-                $('#sticky_class').removeClass('sticky_class');
-                $('#sticy_menu_id').removeClass('sticy_menu_id');
-                $('#black_offer').show();
-                $('#black_offer_show').hide();
-                $('.home_icon_class').hide();
-            }
-        });
+
+			}
+        }
         if (screen.width < 992) {
 
 
@@ -603,8 +581,6 @@ font-weight: initial;font-size: 12px;">Account</span>
         }
 
     });
-
-    //  $(".search_div_section").hide();
 
 
     $('#seachId').on('change input keypress keydown keyup', function () {
@@ -625,7 +601,9 @@ font-weight: initial;font-size: 12px;">Account</span>
                     console.log(response);
                     $(".search_div_section").show();
                     if (response.status == "success") {
-                        $("#searching_data").show();
+
+						$(".searh_class_daynamic").css("z-index", "-1");
+						$("#searching_data").show();
 
                         $("#searching_data").html(response.return_value);
                     }
@@ -657,12 +635,11 @@ font-weight: initial;font-size: 12px;">Account</span>
                         $("#searching_mobile_data").html(response.return_value);
                     }
                 }
-            })
+            });
         } else {
-            $("#searching_mobile_data").html('');
-
-        }
-
+			$("#searching_mobile_data").html('');
+		}
+    });
     });
 
 </script>
@@ -671,13 +648,8 @@ font-weight: initial;font-size: 12px;">Account</span>
 <script>
 
 
-    $('body').on('click', '.xs-item-count', function () {
-        var location = '<?php echo base_url() ?>chechout';
-        //window.location('')
-        window.location.href = location;
-    });
 
-    $('body').on('click', '.add_to_cart', function () {
+    $('body').on('click', '.add_to_cart_releted_product', function () {
         var product_id = $(this).attr('data-product_id');
         var product_price = $(this).attr('data-product_price');
         //var product_size = $('#product_size').val();
@@ -702,6 +674,14 @@ font-weight: initial;font-size: 12px;">Account</span>
             },
             url: '<?php echo base_url()?>ajax/add_to_cart',
             success: function (result) {
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'You have successfully added this product in your cart',
+					showConfirmButton: false,
+					timer:2500
+				})
+
                 var total_result = JSON.parse(result);
                 $('.xs-item-count').text(total_result.cart_items);
                 $('#total_item_bag').text(total_result.cart_items);
@@ -718,9 +698,98 @@ font-weight: initial;font-size: 12px;">Account</span>
 
 </script>
 
+<script>
+	$('body').on('click', '.add_to_cart', function () {
+		var product_id = $(this).attr('data-product_id');
+		var product_price = $(this).attr('data-product_price');
+		//var product_size = $('#product_size').val();
+		var product_title = $(this).attr('data-product_title');
+
+		var product_qty = 1;
+		if ($("input#quantity").length > 0) {
+			product_qty = $("input#quantity").val();
+
+		}
+		$.ajax({
+			type: 'POST',
+			cache: true,
+			data: {
+				"product_id": product_id,
+				"product_qty": product_qty,
+				"product_price": product_price,
+				"product_title": product_title
+
+			},
+			url: '<?php echo base_url()?>ajax/add_to_cart',
+			success: function (result) {
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'You have successfully added this product in your cart',
+					showConfirmButton: false,
+					timer:2500
+				})
+				var total_result = JSON.parse(result);
+				$('.xs-item-count').text(total_result.cart_items);
+				$('#total_item_bag').text(total_result.cart_items);
+				$('.total_item_bag').text(total_result.cart_items);
+				$('#total_amount_bag').text(total_result.cart_total);
+
+
+			}
+
+		});
+
+		return false;
+	});
+
+</script>
 
 <script>
-    jQuery('body').on('click', '.buy_now', function () {
+	jQuery('body').on('click', '.buy_now', function () {
+		var product_id = jQuery(this).attr('data-product_id');
+		var product_price = jQuery(this).attr('data-product_price');
+		var product_title = jQuery(this).attr('data-product_title');
+
+		var product_qty = 1;
+		if ($("input#quantity").length > 0) {
+			product_qty = $("input#quantity").val();
+
+		}
+
+		jQuery.ajax({
+			type: 'POST',
+			cache: true,
+			data: {
+				"product_id": product_id,
+				"product_qty": product_qty,
+				"product_price": product_price,
+				"product_title": product_title
+			},
+			url: '<?php echo base_url()?>ajax/add_to_cart',
+			success: function (result) {
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'You have successfully added this product in your cart',
+					showConfirmButton: false,
+					timer:2500
+				})
+				var total_result = JSON.parse(result);
+
+				$('#shoping_bag .itemno').text(total_result);
+				var location = '<?php echo base_url() ?>chechout';
+				//window.location('')
+				window.location.href = location;
+			}
+		});
+
+		return false;
+	});
+</script>
+
+<script>
+    jQuery('body').on('click', '.buy_now_releted_product', function () {
         var product_id = jQuery(this).attr('data-product_id');
         var product_price = jQuery(this).attr('data-product_price');
         var product_title = jQuery(this).attr('data-product_title');
@@ -742,7 +811,13 @@ font-weight: initial;font-size: 12px;">Account</span>
             },
             url: '<?php echo base_url()?>ajax/add_to_cart',
             success: function (result) {
-
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'You have successfully added this product in your cart',
+					showConfirmButton: false,
+					timer:2500
+				})
                 var total_result = JSON.parse(result);
 
                 $('#shoping_bag .itemno').text(total_result);

@@ -2,8 +2,8 @@
 $uri_string = uri_string();
 $site_title = get_option('site_title');
 $page_title = isset($page_title) ? $page_title : $site_title;
-$og_image = $logo = 'https://ekusheyshop.com/uploads/logo.png';
-$favicon ='https://ekusheyshop.com/uploads/icon.png';
+$og_image = $logo =get_option('logo');
+$favicon =get_option('icon');
 
 
 
@@ -19,7 +19,7 @@ $title = $page_title . (!empty($uri_string) ? ' | ' . $site_title : NULL);
 
 $cart_items = 0;
 foreach ($this->cart->contents() as $key => $val) {
-	if (!is_array($val) OR !isset($val['price']) OR !isset($val['qty'])) {
+	if (!isset($val['qty'])) {
 		continue;
 	}
 	$cart_items += $val['qty'];
@@ -83,9 +83,9 @@ foreach ($this->cart->contents() as $key => $val) {
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fontend/css/responsive.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fontend/css/owl.carousel.min.css"/>
 	<script src="<?php echo base_url(); ?>assets/fontend/js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.3.5/dist/sweetalert2.all.min.js"></script>
 
 	<link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
-
 
 </head>
 <body>
@@ -100,6 +100,11 @@ foreach ($this->cart->contents() as $key => $val) {
 		height: 64px;
 		margin-top: 55px;
 		width: 100%;
+	}
+	.desktop_new_sticky_class{
+		position: fixed;
+		top: -4px;
+	}
 	}
 
 	.sticky_mobile_class {
@@ -137,7 +142,7 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="row">
 
 					<div class="col-lg-6">
-						<p>Hotline: +88 01305260618</p>
+						<p>Hotline: <?= get_option('hotline') ?></p>
 					</div>
 				</div>
 			</div>
@@ -155,7 +160,7 @@ foreach ($this->cart->contents() as $key => $val) {
 
 					<?php } else { ?>
 
-						<li><a href="<?=base_url()?>affiliate/login_signup"  >How to Buy</a></li>
+						<li><a href="<?=base_url()?>pages/how-to-buy"  >How to Buy</a></li>
 						<li><a href="<?=base_url()?>affiliate/login_signup"  >Register</a></li>
 						<li><a href="<?=base_url()?>affiliate/login_signup"  >Sign In</a></li>
 					<?php } ?>
@@ -177,7 +182,7 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="col-lg-2 col-sm-4 xs-order-1" style="margin-top: -12px;">
 					<div class="xs-logo-wraper hide_class_suzon">
 						<a href="<?php echo base_url() ?>">
-							<img src="https://ekusheyshop.com/uploads/logo.png" alt="">
+							<img src="<?=$logo?>" alt="">
 						</a>
 
 					</div>
@@ -192,7 +197,7 @@ foreach ($this->cart->contents() as $key => $val) {
 
 							<div class="input-group-btn">
 
-								<button type="submit" class="btn btn-xs btn-success"><i class="fa fa-search"
+								<button type="submit" class="btn btn-xs btn-success desktop-search-button"><i class="fa fa-search"
 																						style="margin-top: 2px;"></i></button>
 
 							</div>
@@ -219,9 +224,10 @@ foreach ($this->cart->contents() as $key => $val) {
     float: right;
     margin-top: 35px;
 ">
-						<a href=""><img style="margin-right: 15px;width: 30px;" src="<?=base_url()?>images/cart.png"></a>
-						<a href=""><img src="<?=base_url()?>images/track.png"></a>
-						<a href=""><img  style="
+						<span id="total_item_bag"><?=$cart_items?> </span>
+						<a href="<?=base_url()?>cart""><img style="margin-right: 15px;width: 30px;" src="<?=base_url()?>images/cart.png"></a>
+						<a href="<?=base_url()?>pages/track-your-order"><img src="<?=base_url()?>images/track.png"></a>
+						<a href="<?=base_url()?>affiliate/login_signup"><img  style="
     margin-left: 12px;width:30px
 "src="<?=base_url()?>images/user.png"></a>
 
@@ -237,7 +243,7 @@ foreach ($this->cart->contents() as $key => $val) {
 	<!-- nav down section -->
 	<div class="xs-navDown v-yellow" id="sticky_class">
 		<div class="container container-fullwidth" id="top_category_menu">
-			<div class="row" style="z-index:0;border: 1px solid #ddd;height: 62px;border-left: none;border-right: navajowhite;">
+			<div class="row searh_class_daynamic" style="border: 1px solid #ddd;height: 62px;border-left: none;border-right: navajowhite;">
 				<div class="col-lg-3 col-xl-3  d-none d-md-none d-lg-block">
 
 					<div class="cd-dropdown-wrapper xs-vartical-menu v-gray" id="sticy_menu_id">
@@ -368,7 +374,7 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="col-lg-3 col-xl-3 d-none d-md-none d-lg-block">
 
 
-						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif">01300884747 (AM to 10 PM - Everyday)</p>
+						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif"><?=get_option('phone')?> (AM to 10 PM - Everyday)</p>
 
 
 
@@ -487,7 +493,7 @@ z-index: 10000000;" name="q" id="seach_mobile_Id"
 						   class="form-control"
 						   placeholder="Find your products" autocomplete="off">
 					<div class="input-group-btn ">
-						<button type="submit" class="btn btn-success" style="height: 40px;padding: 10px;background-color: green"><i
+						<button type="submit" class="btn btn-success" style="height: 40px;padding: 10px;z-index: 44444;"><i
 								class="fa fa-search"></i></button>
 					</div>
 				</div>

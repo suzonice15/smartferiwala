@@ -302,8 +302,8 @@ $data['category_lists']= $this->MainModel->getAllData('', 'category', 'category_
                     $config['maintain_ratio'] = TRUE;
                     $config['thumb_marker'] = '_thumb';
                     $config['new_image'] = $uploaded_file_path;
-                    $config['width'] = 444;
-                    $config['height'] = 444;
+                    $config['width'] = 200;
+                    $config['height'] = 200;
                     $this->image_lib->clear();
                     $this->image_lib->initialize($config);
                     $this->image_lib->resize();
@@ -587,8 +587,8 @@ $data['category_lists']= $this->MainModel->getAllData('', 'category', 'category_
                     $config['maintain_ratio'] = TRUE;
                     $config['thumb_marker'] = '_thumb';
                     $config['new_image'] = $uploaded_file_path;
-                    $config['width'] = 444;
-                    $config['height'] = 444;
+                    $config['width'] = 200;
+                    $config['height'] = 200;
                     $this->image_lib->clear();
                     $this->image_lib->initialize($config);
                     $this->image_lib->resize();

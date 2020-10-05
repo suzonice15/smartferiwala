@@ -738,11 +738,15 @@ public  function  product_filter(){
 		$data['products'] = get_result($sql);
 		$this->load->view('website/all_product_ajax_load',$data);
 	}
+	public function home_cat_contentt(){
+		$this->load->view('website/home_product_ajax');
+
+	}
 	public function home_cat_content(){
 		$this->load->view('website/home_category_ajax_load');
 
 	}
-	
+
 	public  function  top_category_ajax_product(){
 		$this->load->view('website/top_category_this_week_ajax_load');
 

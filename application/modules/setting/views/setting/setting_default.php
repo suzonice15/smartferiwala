@@ -32,6 +32,13 @@
                         <input type="text" class="form-control" name="phone" id="phone"
                                value="<?= get_option('phone') ?>">
                     </div>
+					<div class="form-group ">
+						<label for="phone">Hotline</label>
+						<input type="text" class="form-control" name="hotline" id="hotline"
+							   value="<?= get_option('hotline') ?>">
+					</div>
+
+
                     <div class="form-group ">
                         <label for="phone">Home promosion title</label>
                         <input type="text" class="form-control" name="home_pomosion_title" id="phone"

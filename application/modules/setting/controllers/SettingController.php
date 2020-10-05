@@ -38,6 +38,7 @@ class SettingController extends MX_Controller
 		//	$data['admin_email'] = $this->input->post('admin_email');
 		//	$data['support_box'] = $this->input->post('support_box');
 		//	$data['footer'] = $this->input->post('footer');
+			$data['hotline'] = $this->input->post('hotline');
 			$data['copyright'] = $this->input->post('copyright');
 			$data['default_product_terms'] = $this->input->post('default_product_terms');
 			$data['shipping_charge_in_dhaka'] = $this->input->post('shipping_charge_in_dhaka');

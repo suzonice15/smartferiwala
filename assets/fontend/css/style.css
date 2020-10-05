@@ -290,7 +290,7 @@ to{opacity:1;}
 .xs-vartical-menu.v-menu-is-active > .cd-dropdown-trigger{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 .xs-vartical-menu.v-menu-is-active .cd-dropdown-trigger.dropdown-is-active::before,
 .xs-vartical-menu.v-menu-is-active .cd-dropdown-trigger.dropdown-is-active::after{display:none;}
-.xs-navbar-search{height: 48px;border: 2px solid #C3232A !important;border-radius: 4px;margin-top: 23px;}
+.xs-navbar-search{height:50px;border: 2px solid #C3232A !important;border-radius: 4px;margin-top: 23px;}
 .xs-navbar-search .input-group{height:100%;}
 .xs-navbar-search input:not([type="submit"]){border:0px;border-radius:0;padding-left:28px;font-size:1em;}
 .xs-navbar-search .xs-category-select{border:0px;height:100%;padding-left:30px;-webkit-appearance:none;-moz-appearance:none;appearance:none;color:#555555;min-width:160px;max-width:170px;cursor:pointer;background-image:url("../images/arrow-2.png");background-repeat:no-repeat;background-position:center right 19px;padding-right:40px;white-space:nowrap;background-color:transparent;}
@@ -547,7 +547,7 @@ to{opacity:1;}
 .version-6 .xs-product-wraper{padding:10px 20px 30px;}
 .xs-tab-content .row{margin-left:0;margin-right:0;}
 .xs-product-header{position:relative;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;margin-bottom:5px;z-index:2;}
-.product-title{font-size:1.14286em;font-weight:500;margin-bottom:10px;line-height:26px;height:48px;overflow:hidden;}
+.product-title{text-align: center;font-size:1.14286em;font-weight:500;margin-bottom:10px;line-height:26px;height:48px;overflow:hidden;}
 .product-title a{color:#222222;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;display:inline-block;}
 .product-title a:hover{color:green;}
 .product-title.highlight{font-size:1em;}
@@ -558,7 +558,7 @@ to{opacity:1;}
 .xs-author-block .post-author .product-title.xs-round-avatar{font-size:1.28571em;margin-bottom:8px;}
 .product-stock{color:#bbbbbb;}
 .product-stock span{padding-left:5px;}
-.price{color:#83b735;font-size:15px;}
+.price{padding-left: 19px;color:#83b735;font-size:13px;}
 .price del{color:red;padding-left:5px;}
 .price.highlight{display:block;font-weight:500;font-size:2.14286em;line-height:1;text-align:left;}
 .price.highlight del{padding-left:0;padding-bottom:5px;display:block;font-size:0.667em;font-weight:400;}
