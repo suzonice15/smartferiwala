@@ -79,7 +79,7 @@ if ($user) {
         <?php if (!empty($cart_items)) { ?>
 
 
-            <div class="col-md-5 col-12">
+            <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header"><b>Order Review</b>
                     </div>
@@ -94,10 +94,10 @@ if ($user) {
                                     <table class="table table-striped table-bordered">
                                         <tbody>
                                         <tr>
-                                            <th width="35%" class="name">Products</th>
+                                            <th width="55%" class="name">Products</th>
                                             <th width="5%" class="name">Quantity</th>
-                                            <th width="30%" class="name">Price</th>
-                                            <th width="30%" class="name">Total</th>
+                                            <th width="20%" class="name">Price</th>
+                                            <th width="20%" class="name">Total</th>
                                         </tr>
 
                                         <?php
@@ -109,7 +109,7 @@ if ($user) {
 
                                             $quntity = $quntity + $items['qty'];
                                             $_product_title = get_product_title($items['id']);
-                                            $_product_title = substr($_product_title, 0, 22) . '...';
+                                            $_product_title = substr($_product_title, 0, 55) . '...';
 
 
                                             ?>
@@ -274,7 +274,7 @@ if ($user) {
                 </div>
              </div>
 
-            <div class="col-md-7 col">
+            <div class="col-md-6 col">
                 <div class="card">
                     <div class="card-header"><b>Customer Information</b>
                     </div>
@@ -371,7 +371,7 @@ if ($user) {
 											<span id="cash_on_delevery_text"
                                                   style="background-color: green" class="btn btn-success btn-sm">Cash On Delivery</span></label>
 
-                                        <label>
+
                                         <label> <input required class="payment_class_suzon"
                                                        style="background-color: green" class="btn btn-success btn-sm"
                                                        type="radio"
@@ -379,6 +379,8 @@ if ($user) {
                                                        value="online"/> <span
                                                 style="background-color: green" class="btn btn-success btn-sm">digital  Payment</span>
                                         </label>
+
+											<p>Note : ঢাকা নসটটর বানহগরর অডাড গরর কেগত্র ২০০ টাকা অগ্রীম প্রোন কনরগত হগব নবকা /রগকট/ন গের মাযযগম।</p>
 
 
                                     </div>
@@ -393,10 +395,10 @@ if ($user) {
                         
                             <div class="checkout-box" style="margin-left: 32px;">
                                 <div class="submit-btns">
-                                    <input type="submit" class="btn btn-primary btn-sm" id="confirm_order" value="Confirm Order">
+                                    <input type="submit" style="background-color: #1D2531" class="btn btn-primary btn-sm" id="confirm_order" value="Confirm Order">
 
-                                    <a style="background-color:red" href="<?php echo base_url() ?>"
-                                       class="btn btn-primary  btn-sm ">Continue
+                                    <a style="background-color:#C9151B" href="<?php echo base_url() ?>"
+                                       class="btn btn-success  btn-sm ">Continue
                                         Shopping</a>
                                 </div>
                             </div>
@@ -541,103 +543,6 @@ if ($user) {
     });
 </script>
 
-<script>
-
-
-    function IncrementFunction(Obj, rowid) {
-        var id_list = Obj.split("_");
-        var id = id_list[2];
-
-
-        var quantity = document.getElementById(Obj).innerHTML;
-        //var quantity = Number(x) + 1;
-        if (quantity) {
-            quantity++;
-            quantity = document.getElementById(Obj).innerHTML = quantity;
-        }
-
-        var row_id = rowid;
-        //var action_type=jQuery(this).attr('data-action_type');
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: '<?php echo base_url() ?>ajax/update_to_cart',
-            data: {rowid: rowid, quantity: quantity},
-            success: function (data) {
-                var total = data.total_amount;
-                $('input[name=order_total]').val(total);
-                $('#subtotal_cost').text(data.total_amount.toFixed(2));
-                $('#total_product_price').text(data.total_amount);
-                var unit = $('#per_poduct_price').text();
-                var total_product_price = parseFloat(unit * quantity);
-                $('#per_poduct_total_price_' + id + '').text(total_product_price.toFixed(2));
-                $('#total_product_price').val(total_product_price);
-                $('#product_price').val(total_product_price.toFixed(2));
-                $('#product_quantity').val(quantity);
-                location.reload(true);
-
-            }
-
-
-        });
-
-
-    }
-
-    function DecrementFunction(Obj, rowid) {
-        var x = document.getElementById(Obj).innerHTML;
-        var quantity = Number(x) - 1;
-        var row_id = rowid;
-        var id_list = Obj.split("_");
-        var id = id_list[2];
-
-
-        if (quantity >= 1) {
-            document.getElementById(Obj).innerHTML = quantity;
-
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: '<?php echo base_url() ?>ajax/update_to_cart',
-                data: {rowid: rowid, quantity: quantity},
-                success: function (data) {
-                    var total = data.total_amount;
-                    $('input[name=order_total]').val(total);
-                    $('#subtotal_cost').text(data.total_amount.toFixed(2));
-                    $('#total_product_price').text(data.total_amount);
-                    var unit = $('#per_poduct_price').text();
-                    var total_product_price = parseFloat(unit * quantity);
-                    $('#per_poduct_total_price_' + id + '').text(total_product_price.toFixed(2));
-                    $('#total_product_price').val(total_product_price);
-                    $('#product_price').val(total_product_price.toFixed(2));
-                    $('#product_quantity').val(quantity);
-                    location.reload(true);
-
-                }
-            });
-
-
-        }
-    }
-
-    function CartDataRemove(product_row) {
-        var rowid = product_row;
-        $('#' + rowid).fadeOut();
-
-        jQuery.ajax({
-            type: 'POST',
-            data: {"rowid": rowid},
-            url: '<?php echo base_url()?>ajax/remove_from_cart',
-            success: function (result) {
-
-
-                location.reload(true);
-            }
-        });
-
-
-    }
-</script>
 
 
 <script>

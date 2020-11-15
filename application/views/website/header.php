@@ -188,7 +188,7 @@ foreach ($this->cart->contents() as $key => $val) {
 					</div>
 
 				</div>
-				<div class="justify-content-center  col-lg-7 col-sm-3 xs-order-3 xs-menus-group ">
+				<div class="justify-content-center  col-lg-8 col-sm-3 xs-order-3 xs-menus-group ">
 					<form class="xs-navbar-search" method="get" action="<?php echo base_url() ?>search">
 						<div class="input-group ">
 							<input type="text" name="q" id="seachId" class="form-control"
@@ -219,14 +219,14 @@ foreach ($this->cart->contents() as $key => $val) {
 				</div>
 
 
-				<div class="col-lg-3 col-sm-5 xs-order-2 xs-wishlist-group">
+				<div class="col-lg-2 col-sm-5 xs-order-2 xs-wishlist-group">
 					<div class="" style="
     float: right;
     margin-top: 35px;
 ">
 						<span id="total_item_bag"><?=$cart_items?> </span>
-						<a href="<?=base_url()?>cart""><img style="margin-right: 15px;width: 30px;" src="<?=base_url()?>images/cart.png"></a>
-						<a href="<?=base_url()?>pages/track-your-order"><img src="<?=base_url()?>images/track.png"></a>
+						<a href="<?=base_url()?>cart""><img style="float:left;width: 30px;" src="<?=base_url()?>images/cart.png"></a>
+						<a href="<?=base_url()?>pages/track-your-order" style="margin-left: 0px;margin-right: 6px;"><img src="<?=base_url()?>images/track.png"></a>
 						<a href="<?=base_url()?>affiliate/login_signup"><img  style="
     margin-left: 12px;width:30px
 "src="<?=base_url()?>images/user.png"></a>
@@ -242,22 +242,30 @@ foreach ($this->cart->contents() as $key => $val) {
 
 	<!-- nav down section -->
 	<div class="xs-navDown v-yellow" id="sticky_class">
-		<div class="container container-fullwidth" id="top_category_menu">
-			<div class="row searh_class_daynamic" style="border: 1px solid #ddd;height: 62px;border-left: none;border-right: navajowhite;">
+		<div class="container container-fullwidth" id="top_category_menu" style="background-color:#333333;margin-top: -30px;">
+			<div class="row searh_class_daynamic" style="/*! border: 1px solid #ddd; */height: 56px;/*! border-left: none; *//*! border-right: navajowhite; */background-color: #333333;color: white;">
 				<div class="col-lg-3 col-xl-3  d-none d-md-none d-lg-block">
 
 					<div class="cd-dropdown-wrapper xs-vartical-menu v-gray" id="sticy_menu_id">
 						<a class="cd-dropdown-trigger" href="#0">
 							<i class="fa fa-list-ul"></i> CATEGORIES
 						</a>
-						<nav class="cd-dropdown top_sticky_category_menu">
-							<h2>Marketpress</h2>
-							<a href="#0" class="cd-close">Close</a>
+						<nav  style="margin-top: -22px;" class="cd-dropdown top_sticky_category_menu" >
+							 
+							<a href="#0"  style="margin-left:-15px" class="cd-close">Close</a>
 
+
+<style>
+.cd-dropdown-content:first-child li {
+ margin-top:-28px
+}
+</style>
 
 
 							<ul class="cd-dropdown-content">
 								<?php
+								
+								$count=0;
 								$parentCategories = get_result("SELECT category_id,category_name,category_title FROM `category` where parent_id=0 and status=1 ORDER BY rank_order ASC");
 								foreach ($parentCategories as $parentCategory) {
 
@@ -268,7 +276,7 @@ foreach ($this->cart->contents() as $key => $val) {
 									if ($subCategories) {
 										?>
 
-										<li class="has-children">
+										<li class="has-children" >
 											<a class="no-padding"
 											   href="<?= $link_parent ?>"><?php echo $parentCategory->category_title; ?>
 												<i
@@ -276,7 +284,7 @@ foreach ($this->cart->contents() as $key => $val) {
 
 
 											<ul class="cd-secondary-dropdown is-hidden">
-												<li class="go-back"><a
+												<li style="margin-top:-28px" class="go-back"><a
 														href="<?= $link_parent ?>"><?php echo $parentCategory->category_title; ?> </a>
 												</li>
 
@@ -292,7 +300,7 @@ foreach ($this->cart->contents() as $key => $val) {
 															<a href="<?= $link_sub_parent ?>" style="cursor:pointer"
 															   class="secend_menu_class"><?php echo $subCategory->category_title; ?>
 															</a>
-															<ul class="is-hidden">
+															<ul class="is-hidden" style="height: 350px">
 																<?php
 																$childenCategories = get_result("SELECT category_id,category_name,category_title FROM `category` where  parent_id=$sub_parent and status=1 ORDER BY rank_order ASC");
 																if (isset($childenCategories)) {
@@ -329,7 +337,8 @@ foreach ($this->cart->contents() as $key => $val) {
 											</ul> <!-- .cd-secondary-dropdown -->
 										</li> <!-- .has-children -->
 									<?php } else { ?>
-										<li>
+									
+										<li <?php if($count==0) { echo 'style="margin-top:-28px"';} ?> >
 											<a href="<?= $link_parent ?>">  <?php echo $parentCategory->category_title; ?>
 											</a>
 
@@ -337,6 +346,7 @@ foreach ($this->cart->contents() as $key => $val) {
 										</li>
 
 									<?php }
+									$count++;
 								} ?>
 
 
@@ -358,12 +368,12 @@ foreach ($this->cart->contents() as $key => $val) {
 							</style>
 
 							<ul class="nav-menu top_menu_style">
-								 		<li><a href="<?php echo base_url(); ?>pages/contact-us">Follow us on FACEBOOK</a>
-								<li><a href="<?php echo base_url(); ?>pages/affiliate-program">Watch Reviews on YOUTUBE</a>
+								 		<li><a href="<?php echo base_url(); ?>pages/contact-us">Follow us on Facebook</a>
+								<li><a href="<?php echo base_url(); ?>pages/affiliate-program">Watch Reviews on Youtube</a>
 
 
 								</li>
-								<li><a href="<?php echo base_url(); ?>chechout">HOT Deals</a>
+								<li><a href="<?php echo base_url(); ?>facebook">HOT Deals</a>
 
 
 							</ul>
@@ -374,7 +384,7 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="col-lg-3 col-xl-3 d-none d-md-none d-lg-block">
 
 
-						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif"><?=get_option('phone')?> (AM to 10 PM - Everyday)</p>
+						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;font-size: 15px;color: white;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif"><?=get_option('phone')?> (AM to 10 PM - Everyday)</p>
 
 
 
@@ -389,7 +399,7 @@ foreach ($this->cart->contents() as $key => $val) {
 
 
 <header id="hide_mobile_menu">
-	<div class="container-fluid">
+	<div class="container container-fullwidth"">
 		<div class="row">
 
 

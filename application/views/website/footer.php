@@ -5,35 +5,46 @@
 <a id="button_move_to_top"> </a>
 
 <style>
-    .xs-footer-section address,.xs-footer-section ul a{color:black}
- .xs-footer-section ul a:hover{color:green}
+    .xs-footer-section address,.xs-footer-section ul a{color:white}
+ .xs-footer-section ul a:hover{color:white}
 
 </style>
 
-<footer class="xs-footer-section d-print-none">
+<footer class="xs-footer-section d-print-none" style="background-color: #333E4F;color:white">
     <div class="xs-footer-main">
         <div class="container container-fullwidth">
             <div class="row no-gutters">
                 <div class="col-lg-12  col-md-12 row xs-footer-info-and-payment">
 
 					<div class=" col-lg-2 col-md-6  col-12 footer-widget">
-						<h5 style="margin-bottom: -3px;">Ekusheshop</h5>
+						<h5 style="margin-bottom: -3px;">Menu</h5>
 
 						<ul class="xs-list" style="margin-bottom: 10px;">
 
 							<li><a target="_blank" style="font-style: normal;
 line-height: inherit;" href="<?php echo base_url() ?>pages/about-us">About US</a></li>
 							<li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/contact-us">Contact US</a></li>
-							<li><a target="_blank" style="font-style: normal;
 line-height: inherit;" href="<?php echo base_url() ?>pages/privacy-policy">Privacry Policy</a></li>
-
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/terms-conditions">Terms and Conditions</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/return-refund-policy">Return and
+									Refund Policy</a></li>
+							<li><a target="_blank" style="font-style: normal;
+line-height: inherit;" href="<?php echo base_url() ?>pages/contact-us">Contact US</a></li>
 
 						</ul><!-- .xs-list END -->
 
-						<h5 style="margin-bottom: -3px;">Earn with us</h5>
+
+					</div><!-- .footer-widget END -->
+
+					<div class=" col-lg-2 col-md-6 col-12 footer-widget">
+						<h5 style="margin-bottom: -3px;">Earn with us </h5>
+
 
 						<ul class="xs-list">
+
+
 							<li><a  style="font-style: normal;
 line-height: inherit;" href="<?php echo base_url() ?>affiliate/login_signup">Join Affiliate Program</a></li>
 							<li><a target="_blank" style="font-style: normal;
@@ -41,27 +52,6 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-program">Af
 							<li><a target="_blank" style="font-style: normal;
 line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-faq">Affiliate FQA</a></li>
 
-
-						</ul><!-- .xs-list END -->
-					</div><!-- .footer-widget END -->
-
-					<div class=" col-lg-2 col-md-6 col-12 footer-widget">
-						<h5 style="margin-bottom: -3px;">Customer Care</h5>
-
-
-						<ul class="xs-list">
-
-							<li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/terms-conditions">Terms and Conditions</a></li>
-							<li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/return-refund-policy">Return and
-									Refund Policy</a></li>
-							<li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/track-your-order">Track Your
-									Order</a></li>
-							<li><a target="_blank" style="font-style: normal;
-line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to buy</a>
-							</li>
 
 
 						</ul><!-- .xs-list END -->
@@ -74,7 +64,7 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
                     <div class="col-lg-4 col-md-6 col-12  media">
                         <span class="icon icon-highlight color-yellow d-flex"></span>
                         <div class="media-body">
-                            <h5>We Using <strong>Safe Payments</strong></h5>
+                            <h5>We Using Safe Payments </h5>
                             <ul class="xs-payment-card">
 
                                 <li>
@@ -84,13 +74,7 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
                                             style="height: 32px;border-radius: 7px;" alt="payment-icon-image">
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <img
-                                            src="<?php echo base_url() ?>images/master.png"
-                                            style="height: 32px;border-radius: 7px;" alt="payment-icon-image">
-                                    </a>
-                                </li>
+
                                 <li>
                                     <a href="#">
                                         <img
@@ -102,7 +86,7 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
 
                             </ul><!-- .xs-payment-card END -->
                             <div class="xs-footer-secure-info">
-                                <h6>Secured by:</h6>
+                                <h6>	Verified by:</h6>
                                 <ul class="footer-secured-by-icons">
                                     <li>
                                         <img
@@ -122,15 +106,13 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
 					<div class="col-lg-4 col-md-6 media">
 						<span class="icon icon-support color-yellow d-flex"></span>
 						<div class="media-body">
-							<h5>Got Question? Call us 24/7 <strong><?= get_option('phone') ?></strong></h5>
-							<address>
-								House 13B,Block B <br/>
-								2nd Colony,Mazar Road<br/> Dhaka-1216, Bangladesh
+							<h5>Got Question? Call us 24/7 <br><?= get_option('phone') ?></br></h5>
+							<address>House 13B, Block B <br/>
+								Second Colony, Mazar Road <br>
+								Dhaka-1216, Bangladesh
+
 							</address>
-							<a style="background-color: green"
-							   href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.150962101775!2d90.34543732504021!3d23.798126838263272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1d452b5f22b%3A0x76a65b2cdb420617!2sekusheyshop.com!5e0!3m2!1sen!2sbd!4v1579498263210!5m2!1sen!2sbd"
-							   class="xs-map-popup btn btn-success btn-sm"><i class="icon icon-placeholder"></i>View On
-								Map</a>
+							<p>E-mail: Support@smartferiwala.com</p>
 						</div>
 					</div><!-- .media END -->
 
@@ -140,8 +122,8 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/how-to-buy">How to bu
             </div>
         </div>
     </div><!-- .xs-footer-main END -->
-    <div class="xs-copyright copyright-yellow <?php if(isset($product_page_error_solve)) {  echo 'product_page_error_solve' ;  } ?>" style="background-color: green;"  >
-        <div class="container container-fullwidth">
+    <div  style="background-color: #333E4F;color:white;border-top: 1px solid #485160;" class="xs-copyright copyright-yellow <?php if(isset($product_page_error_solve)) {  echo 'product_page_error_solve' ;  } ?>" style="background-color: green;"  >
+        <div class="container container-fullwidth" >
             <div class="row">
                 <div class="col-md-12 col-lg-7 col-12">
                     <div class="xs-copyright-text" style="color:#ffffff">
@@ -583,11 +565,11 @@ font-weight: initial;font-size: 12px;">Account</span>
     });
 
 
-    $('#seachId').on('change input keypress keydown keyup', function () {
+    $('#seachId').on('input', function () {
         var search_query = $('#seachId').val();
-        if (search_query.length >= 1) {
+        if (search_query.length >= 2) {
             $("#table_click_hide").show();
-
+			console.log('if')
 
             $.ajax({
                 type: "POST",
@@ -599,10 +581,10 @@ font-weight: initial;font-size: 12px;">Account</span>
 
                 success: function (response) {
                     console.log(response);
-                    $(".search_div_section").show();
-                    if (response.status == "success") {
 
-						$(".searh_class_daynamic").css("z-index", "-1");
+                    if (response.status == "success") {
+						$(".search_div_section").show();
+						$(".search_div_section").css({"z-index": "1","position":"relative"});
 						$("#searching_data").show();
 
                         $("#searching_data").html(response.return_value);
@@ -610,7 +592,8 @@ font-weight: initial;font-size: 12px;">Account</span>
                 }
             })
         } else {
-            $("#searching_data").html('');
+        	console.log('else')
+            $(".search_div_section").hide();
 
         }
 
@@ -674,13 +657,7 @@ font-weight: initial;font-size: 12px;">Account</span>
             },
             url: '<?php echo base_url()?>ajax/add_to_cart',
             success: function (result) {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
 
                 var total_result = JSON.parse(result);
                 $('.xs-item-count').text(total_result.cart_items);
@@ -722,13 +699,7 @@ font-weight: initial;font-size: 12px;">Account</span>
 			},
 			url: '<?php echo base_url()?>ajax/add_to_cart',
 			success: function (result) {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
 				var total_result = JSON.parse(result);
 				$('.xs-item-count').text(total_result.cart_items);
 				$('#total_item_bag').text(total_result.cart_items);
@@ -768,13 +739,7 @@ font-weight: initial;font-size: 12px;">Account</span>
 			},
 			url: '<?php echo base_url()?>ajax/add_to_cart',
 			success: function (result) {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
 				var total_result = JSON.parse(result);
 
 				$('#shoping_bag .itemno').text(total_result);
@@ -811,13 +776,7 @@ font-weight: initial;font-size: 12px;">Account</span>
             },
             url: '<?php echo base_url()?>ajax/add_to_cart',
             success: function (result) {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
                 var total_result = JSON.parse(result);
 
                 $('#shoping_bag .itemno').text(total_result);

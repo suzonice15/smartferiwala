@@ -55,7 +55,7 @@
 <span class="top_product"></span>
 
 <div class="xs-banner banner-fullwidth-version-2 home-category-product-list">
-	<div class="container container-fullwidth">
+	<div class="container-fluid container-fullwidth">
 		<span class="home_cat_content"></span>
 
 

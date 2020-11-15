@@ -15,11 +15,9 @@ foreach ($home_cat_section as $home_cat) {
 
 
     ?>
-    <section class="product-cate-block-section" style="margin-top: 19px;
-margin-bottom: -46px;">
-        <div class="container container-fullwidth">
-            <div class="product-cate-block-wraper">
-                <div class="row no-gutters">
+
+        <div class="container-fluid">
+                 <div class="row no-gutters">
                     <div class="col-lg-12">
                         <div class="row no-gutters">
 
@@ -140,7 +138,7 @@ margin-bottom: -46px;">
                                                                data-product_id="<?= $prod->product_id ?>"
                                                                data-product_price="<?= $sell_price ?>"
                                                                data-product_title="<?= $prod->product_title ?>"><i
-                                                                    class="icon icon-online-shopping-cart"></i>&nbsp;Add to
+                                                                    class="icon icon-online-shopping-cart"></i>&nbsp;&nbsp;Add to
                                                                 Cart</a>
                                                         </div>
                                                         <div>
@@ -149,7 +147,7 @@ margin-left: -30px;" href="#" class="btn btn-info  btn-sm   buy_now mobile_buy_n
                                                                data-product_id="<?= $prod->product_id ?>"
                                                                data-product_price="<?= $sell_price ?>"
                                                                data-product_title="<?= $prod->product_title ?>"><i
-                                                                    class="icon icon-bag"></i>&nbsp;Buy Now</a>
+                                                                    class="icon icon-bag"></i>&nbsp;&nbsp;Buy Now</a>
                                                         </div>
                                                     </div>
                                                     
@@ -176,10 +174,9 @@ margin-left: -30px;" href="#" class="btn btn-info  btn-sm   buy_now mobile_buy_n
                 </div><!-- .row END -->
 
 
-            </div>
+
         </div><!-- .container END -->
 
-    </section><!-- end product category block section -->
 
 
 <?php } ?>
@@ -229,13 +226,13 @@ $featured_image = get_media_path($category_info->medium_banner);
 						   data-product_id="<?= $rel_prod->product_id ?>"
 						   data-product_price="<?= $sell_price ?>"
 						   data-product_title="<?= $_product_title ?>"><i
-								class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+								class="icon icon-online-shopping-cart"></i>  Add to Cart</a>
 
 						<a href="#" class="home_buy_now_releted_product"
 						   data-product_id="<?= $rel_prod->product_id ?>"
 						   data-product_price="<?= $sell_price ?>"
 						   data-product_title="<?= $_product_title ?>"><i
-								class="icon icon-bag"></i>Buy Now</a>
+								class="icon icon-bag"></i>  Buy Now</a>
 
 					</div>
 				</div><!-- .xs-product-category text-center END -->

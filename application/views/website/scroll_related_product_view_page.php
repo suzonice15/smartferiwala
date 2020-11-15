@@ -87,13 +87,13 @@ foreach ($related_products as $rel_prod) {
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
-                            class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+                            class="icon icon-online-shopping-cart"></i>  Add to Cart</a>
 
                     <a href="#" class="buy_now_releted_product"
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
-                            class="icon icon-bag"></i>Buy Now</a>
+                            class="icon icon-bag"></i>  Buy Now</a>
 
             </div>
             

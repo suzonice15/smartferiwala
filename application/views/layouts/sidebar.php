@@ -121,20 +121,6 @@
                                 <i class="fa fa-arrow-circle-o-right"></i> Product Commission </a>
                         </li>
 
-                        <!--
-					<li><a href="<?php echo base_url(); ?>product-limited">
-							<i class="fa fa-arrow-circle-o-right"></i> Limited Stock Products </a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>product-bad-stock?status=bad_stock">
-							<i class="fa fa-arrow-circle-o-right"></i> Bad Stock Products </a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>product-return?status=return_stock">
-							<i class="fa fa-arrow-circle-o-right"></i> Return Products </a>
-					</li>
-					<li><a href="<?php echo base_url(); ?>product-demage?status=demurrage">
-							<i class="fa fa-arrow-circle-o-right"></i> Demurrage Products </a>
-					</li>
-					-->
                         <li><a href="<?php echo base_url(); ?>product-size">
                                 <i class="fa fa-arrow-circle-o-right"></i> Products Size </a>
                         </li>

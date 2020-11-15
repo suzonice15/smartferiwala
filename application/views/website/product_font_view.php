@@ -11,7 +11,7 @@ $sku = $prod_row->sku;
 
 /*# product category #*/
 $product_cat = null;
-$product_cats = get_result("SELECT term_id FROM term_relation WHERE product_id=$prod_row->product_id");
+$product_cats = get_result("SELECT term_id FROM term_relation WHERE product_id=$prod_row->product_id order by term_id desc limit 1");
 if (count($product_cats) > 0) {
     foreach ($product_cats as $pcat) {
         $product_cat[] = $pcat->term_id;
@@ -505,6 +505,11 @@ color:#219291
             </li>
 
         </ul>
+		
+		<style>
+		
+		#myTabContent p{margin-bottom:2px}
+		</style>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane animated slideInUp show active" id="profile" role="tabpanel"
                  aria-labelledby="profile-tab">

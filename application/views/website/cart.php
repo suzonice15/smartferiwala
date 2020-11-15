@@ -98,11 +98,11 @@ if ($user) {
                                         <tbody>
                                         <tr>
                                             <th width="5%" class="name">Sl</th>
-                                            <th   width="10%"  class="name">Products</th>
-                                            <th  width="10%" class="name">Code</th>
+                                            <th   width="50%"  class="name">Products</th>
+                                            <th  width="5%" class="name">Code</th>
                                             <th  width="10%" class="name">Quantity</th>
-                                            <th   width="30%" class="name">Product Price</th>
-                                            <th   width="20%" class="name">Total</th>
+                                            <th   width="10%" class="name">Product Price</th>
+                                            <th   width="10%" class="name">Total</th>
                                             <th   width="5%" class="total text-right">Remove </th>
                                         </tr>
 
@@ -117,7 +117,7 @@ if ($user) {
                                             $quntity = $quntity + $items['qty'];
                                           $link= get_product_link($items['id']);
                                             $_product_title = get_product_title($items['id']);
-                                            $_product_title = substr($_product_title, 0, 22) . '...';
+                                         //   $_product_title = substr($_product_title, 0, 22) . '...';
 
 
                                             ?>
@@ -273,10 +273,10 @@ margin-left: 20px;">
                                         </tr>
                                         </tbody>
                                     </table>
-									  <a style="margin-left: 1px;" href="<?php echo base_url()?>chechout"  class="btn btn-primary btn-sm add_to_cart_cart_page  mobile_add_to_cart ">Checkout</a>
+									  <a style="margin-left: 1px;background-color: #1D2531" href="<?php echo base_url()?>chechout"  class="btn btn-info btn-sm add_to_cart_cart_page  mobile_add_to_cart ">Checkout</a>
 
 
-                    <a style="background-color:red;"  href="<?php echo base_url()?>"  class="cart_mobile_page btn btn-primary btn-sm add_to_cart_cart_page  mobile_add_to_cart  " >continue shopping</a>
+                    <a style="background-color:red;"  href="<?php echo base_url()?>"  class="cart_mobile_page btn btn-success btn-sm add_to_cart_cart_page  mobile_add_to_cart  " >continue shopping</a>
                                 </div>
                             </div>
                     </div>

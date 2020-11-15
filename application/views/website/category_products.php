@@ -31,16 +31,11 @@ width: 200px;" >
 	</div>
 </div>
 
-<section class="xs-section-padding bg-gray">
-	<div class="container" style="margin-top: -100px;margin-bottom: -80px;">
-		<div class="xs-content-header version-2">
-			<div class="clearfix"></div>
-		</div>
+<section class="xs-section-padding" style="padding-top: 5px">
+	<div class="container-fluid"  style="padding-left:65px;padding-right:65px;">
+
 <span id="dynamic_content"></span>
-
-								<span class=" filter_data">
-
-								</span>
+		<span class=" filter_data"></span>
 
 
 	</div><!-- .container END -->

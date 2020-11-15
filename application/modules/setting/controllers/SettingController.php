@@ -21,6 +21,8 @@ class SettingController extends MX_Controller
 		$data['active'] = "Update Setting";
 		$data['title'] = "Default Setting  Update form ";
 
+
+
 		$data['pageContent'] = $this->load->view('setting/setting/setting_default', $data, true);
 		$this->load->view('layouts/main', $data);
 	}

@@ -29,8 +29,7 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
 
 <!-- hot sale section -->
-<section class="xs-section-padding bg-gray v-yellow-and-black" style="margin-top:-39px;padding: 28px 14px;">
-    <div class="container container-fullwidth">
+     <div class="container-fluid" style="padding-left: 51px;padding-right: 51px;">
         <div class="row">
             <div class="col-lg-12">
                 <div class="xs-content-header">
@@ -140,9 +139,9 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
                                             </div><!-- .xs-deals-info END -->
 
                                             <div class="countdow-timer" style="margin-top: -30px;">
-                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
-                                                <div class="xs-countdown-timer"
-                                                     data-countdown="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></div>
+<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+												<span class="xs-countdown-timer countdown"
+													  value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
                                             </div><!-- .countdow-timer END -->
                                         </div>
                                     </div>
@@ -234,9 +233,9 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
                                             </div><!-- .xs-deals-info END -->
 
                                             <div class="countdow-timer" style="margin-top: -30px;">
-                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
-                                                <div class="xs-countdown-timer"
-                                                     data-countdown="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></div>
+<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+												<span class="xs-countdown-timer countdown"
+													  value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
                                             </div><!-- .countdow-timer END -->
                                         </div>
                                     </div>
@@ -326,9 +325,9 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
                                             </div><!-- .xs-deals-info END -->
                                             <div class="countdow-timer" style="margin-top: -30px;">
-                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
-                                                <div class="xs-countdown-timer"
-                                                     data-countdown="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></div>
+<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+                                                <span class="xs-countdown-timer countdown"
+                                                    value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
                                             </div><!-- .countdow-timer END -->
                                         </div>
                                     </div>
@@ -340,6 +339,20 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
             </div>
         </div><!-- .row END -->
     </div><!-- .container END -->
-</section><!-- end hot sale section -->
 
 <!-- product category block section -->
+
+<script type="text/javascript" src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+<script>
+
+	$(function(){
+		$('.countdown').each(function(){
+			$(this).countdown($(this).attr('value'), function(event) {
+				$(this).text(
+					event.strftime('%D days %H:%M:%S')
+				);
+			});
+		});
+	});
+
+</script>

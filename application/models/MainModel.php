@@ -276,11 +276,11 @@ class MainModel extends CI_Model
 												
 														<a href="#" class="add_to_cart_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
-														   data-product_title="' . $row->product_title . '" ><i class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+														   data-product_title="' . $row->product_title . '" ><i class="icon icon-online-shopping-cart"></i>    Add to Cart</a>
 												
 														<a href="#" class="buy_now_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
-														   data-product_title="' . $row->product_title . '"><i class="icon icon-bag"></i>Buy Now</a>
+														   data-product_title="' . $row->product_title . '"><i class="icon icon-bag"></i>   Buy Now</a>
 					                           
 					</div>';
  }

@@ -51,7 +51,7 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 .buy_now_single{background-color:#13a49b;margin-left:3px;padding:9px 5px;width:100px;text-align:center;color:white;margin-top:-51px;height:40px;}
 .add_to_cart_single{background-color:#1aa60a;margin-left:-42px;padding:9px 5px;color:white;width:100px;text-align:center;}
 .buy_now:hover{background-color:blue;}
-.suzon_slider_class{margin:-58px 0px;margin-bottom:auto;margin-bottom:58px;}
+.suzon_slider_class{margin:0px 0px;margin-bottom:auto;margin-bottom:58px;}
 @media only screen and (max-width:992px){.desktop_category_menu{display:none}
 .top_category_main_section:hover .top_category_hover_add_to_cart{display:block;margin-top:-97px;margin-bottom:21px;}
 .mobile_category_menu{display:none}
@@ -85,13 +85,14 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 #total_item_bag{
 	position: relative;
 	top: -8px;
-	left: 51px;
+	left: -16px;
 	background-color: red;
 	width: 24px;
 	border-radius: 100%;
 	padding: 3px;
 	display: inline-block;
 	text-align: center;
+	color:white
 }
 .total_item_bag{position:relative;top:-46px;left:20px;background-color:red;width:12px;border-radius:50%;padding:0px;display:inline-block;height:16px;font-size:13px;text-align:center;}
 .middile_quntity_classs{}
@@ -203,11 +204,11 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 	border-bottom: 1px solid #e3e3e3;
 	padding-bottom: 10px;
 	padding: 18px 20px;
-	border-bottom: 3px solid green;
+	border-bottom: 3px solid #C3232A;
 }
 
 .home-category-product-list .category_title_section {
-	background: green;
+	background: #C3232A;
 	height: 39px;
 	padding: 10px 10px 0 10px;
 	color: #fff;
@@ -222,7 +223,7 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 }
 
 .home-category-product-list .category_title_section::after {
-	border-bottom: 40px solid green;
+	border-bottom: 40px solid #333333;
 	border-right: 31px solid transparent;
 	content: "";
 	position: absolute;
