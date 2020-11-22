@@ -30,6 +30,13 @@ if ($user) {
         margin-top: -20px;
         margin-left: 44px;
     }
+    
+      .check_out_logo {
+    margin-top: 5px;
+    position: relative;
+    top: -36px;
+    right: -112px;
+        }
 
     @media (max-width: 634px) {
         .decrement_class {
@@ -38,6 +45,12 @@ if ($user) {
             cursor: pointer;
             float: right;
             margin-top: 1px;
+        }
+          .check_out_logo {
+  margin-top: 5px;
+    position: relative;
+    top: -4px;
+    right: 2px;
         }
 
     }
@@ -377,19 +390,20 @@ if ($user) {
                                                        type="radio"
                                                        name="payment_type"
                                                        value="online"/> <span
-                                                style="background-color: green" class="btn btn-success btn-sm">digital  Payment</span>
+                                                style="background-color: green" class="btn btn-success btn-sm">Digital  Payment</span>
                                         </label>
 
-											<p>Note : ঢাকা নসটটর বানহগরর অডাড গরর কেগত্র ২০০ টাকা অগ্রীম প্রোন কনরগত হগব নবকা /রগকট/ন গের মাযযগম।</p>
+											<p>Note : ঢাকা সিটির বাহিরের অর্ডারের ক্ষেত্রে ২০০ টাকা অগ্রীম প্রদান করিতে হবে বিকাশ/রকেট/নগদের মাধ্যমে</p>
 
 
                                     </div>
+                                   
 
-                                    <h5 style="margin-left: 19px;">We Accepte:<img class="logo logo-visa"
-                                                                                   src="<?php echo base_url()?>/images/card-logo.png">
+                                    <h5 style="margin-left: 19px;">We Accept : <img class="logo check_out_logo"
+                                                                                   src="<?php echo base_url()?>/images/Banner for Checkout.jpg">
                                     </h5>
                                     <input type="checkbox" required name="terms_and_conditions" id="terms_and_conditions" value="1"> I agree
-									with the  <a href="<?php echo base_url()?>/pages/terms">Terms & Condition and Privacy Policy </a> of Smart Feriwala </label> </p>
+									with the  <a href="<?php echo base_url()?>/pages/terms">Terms & Condition </a> and  <a href="<?php echo base_url()?>/privacy-policy">Privacy Policy of Smart Feriwala </label> </p>
                                 </div>
                             </div>
                         
@@ -485,8 +499,8 @@ if ($user) {
             $('#total_cost').text(total.toFixed(2));
             $('input[name=order_total]').val(total);
             $('#shipping_charge').val(charge);
-            $('#cash_on_delevery').hide();
-            $('#cash_on_delevery_text').hide();
+            $('#cash_on_delevery').show();
+            $('#cash_on_delevery_text').show();
 
 
         }
@@ -669,9 +683,7 @@ if ($user) {
     
     
     $(document).ready(function() {
-  $("#checkout").on("contextmenu", function(e) {
-    return false;
-  });
+ 
 });
 </script>
 

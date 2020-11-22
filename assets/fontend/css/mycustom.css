@@ -43,15 +43,29 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 .top_category_main_section:hover .top_category_hover_add_to_cart{display:block;margin-top:-62px;}
 .pagination_category_page{margin-top:-50px;margin-bottom:-50px;}
 .increament_plus{height:39px;width:40px;background-color:green;border:1px solid green;color:wheat;cursor:pointer;}
-.add_to_cart{background-color:green;margin-left:-124px;padding:9px 5px;color:white;width:100px;text-align:center}
-.add_to_cart:hover{background-color:#0000FF;//margin-left:- 124 px;padding:9px 5px;color:white;width:100px;text-align:center}
-.buy_now{background-color:red;margin-left:2px;padding:9px 5px;width:100px;text-align:center;color:white;}
-.buy_now:hover{background-color:#0000FF;//margin-left:2 px;padding:9px 5px;width:100px;text-align:center;color:white;}
+.add_to_cart{
+	background-color: #333333;
+	margin-left: -133px;
+	padding: 9px 5px;
+	color: white;
+	width: 138px;
+	text-align: center;
+	border-radius: 50px;
+}
+.buy_now{
+	background-color: red;
+	margin-left: 2px;
+	padding: 7px 8px;
+	width: 100px;
+	text-align: center;
+	color: white;
+	border-radius: 50px;
+	height: 38px;
+	width: 150px;}
 .decrement_plus{height:39px;width:40px;background-color:red;border:1px solid red;color:wheat;cursor:pointer;}
 .buy_now_single{background-color:#13a49b;margin-left:3px;padding:9px 5px;width:100px;text-align:center;color:white;margin-top:-51px;height:40px;}
 .add_to_cart_single{background-color:#1aa60a;margin-left:-42px;padding:9px 5px;color:white;width:100px;text-align:center;}
-.buy_now:hover{background-color:blue;}
-.suzon_slider_class{margin:0px 0px;margin-bottom:auto;margin-bottom:58px;}
+ .suzon_slider_class{margin:0px 0px;margin-bottom:auto;margin-bottom:58px;}
 @media only screen and (max-width:992px){.desktop_category_menu{display:none}
 .top_category_main_section:hover .top_category_hover_add_to_cart{display:block;margin-top:-97px;margin-bottom:21px;}
 .mobile_category_menu{display:none}
@@ -70,7 +84,7 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 .mobile_add_to_cart{}
 .mobile_buy_now_cart{}
 }
-#button_move_to_top{display:inline-block;background-color:red;width:50px;height:50px;text-align:center;border-radius:4px;margin:30px;position:fixed;bottom:21px;right:-27px;transition:background-color .3s;z-index:1000;}
+#button_move_to_top{display:inline-block;background-color:#C3232A;width:50px;height:50px;text-align:center;border-radius:4px;margin:30px;position:fixed;bottom:21px;right:-27px;transition:background-color .3s;z-index:1000;}
 #button_move_to_top:hover{cursor:pointer;background-color:green;}
 #button_move_to_top:active{background-color:#555;}
 #button_move_to_top::after{content:"\f077";font-family:FontAwesome;font-weight:normal;font-style:normal;font-size:2em;line-height:50px;color:#fff;}
@@ -180,11 +194,11 @@ form.reviewform .srating > input:checked ~ label:hover ~ label{color:#FFED85;}
 .xs-product-wraper:hover .category_product_hover{
 	display:block;bottom:20px;-webkit-transition:all 400ms ease 0s;-o-transition:all 400ms ease 0s;transition:all 400ms ease 0s;-webkit-box-shadow:0 5px 4px 2px rgba(0, 0, 0, 0.1);-moz-box-shadow:0 5px 4px 2px rgba(0, 0, 0, 0.1);-o-box-shadow:0 5px 4px 2px rgba(0, 0, 0, 0.1);box-shadow:0 5px 4px 2px rgba(0, 0, 0, 0.1);opacity:1;
 }
-.xs-product-wraper .category_product_hover a{background:#1C6AB4;width:50%;float:left;padding:5px 2px;text-align:center;color:#fff;font-size:12px;border:solid 1px #1C6AB4;}
+.xs-product-wraper .category_product_hover a{background:#1C6AB4;width:50%;float:left;padding:8px 2px;text-align:center;color:#fff;font-size:12px;border:solid 1px #1C6AB4;}
 
 .xs-product-wraper .category_product_hover a+a{border-left:1px solid #fff;}
 
-.xs-product-wraper .home_category_product_hover a{background:#1C6AB4;width:50%;float:left;padding:5px 2px;text-align:center;color:#fff;font-size:12px;border:solid 1px #1C6AB4;}
+.xs-product-wraper .home_category_product_hover a{font-weight: bold;background:#1C6AB4;width:50%;float:left;padding:8px 2px;text-align:center;color:#fff;font-size:12px;border:solid 1px #1C6AB4;}
 
 .xs-product-wraper .home_category_product_hover a+a{border-left:1px solid #fff;}
 

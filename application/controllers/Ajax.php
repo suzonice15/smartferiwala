@@ -418,24 +418,20 @@ public function fblogin_process()
 public function update_account()
 {
 	$user_id = $this->input->post('user_id');
-
 	$row_data = array();
 	$data['user_name'] = $this->input->post('user_name');
 	$data['user_login'] = $this->input->post('user_login');
 	$data['user_phone'] = $this->input->post('user_phone');
 	$data['user_email'] = $this->input->post('user_email');
 	$data['updated_date'] = date('Y-m-d H:i');
-
 	$user_address = $this->input->post('user_address');
 	$user_city = $this->input->post('user_city');
 	$user_state = $this->input->post('user_state');
-
 	$this->db->where('users.user_id', $user_id);
 	if ($this->db->update('users', $data)) {
 		update_user_meta($user_id, 'user_address', $user_address);
 		update_user_meta($user_id, 'user_city', $user_city);
 		update_user_meta($user_id, 'user_state', $user_state);
-
 		$userdata = $this->session->userdata('loggedin');
 		$user_type = $userdata['user_type'];
 		$user_status = $userdata['user_status'];

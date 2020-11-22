@@ -97,7 +97,9 @@ body .xs-promotion ~ .header-transparent{top:41px;}
 	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	text-transform: capitalize;
-	word-spacing: -1px;}
+	word-spacing: -1px;
+	margin-right: 25px;
+}
 .xs-menus .nav-menu > li > a.highlight{color:#e14546 !important;}
 .xs-menus .nav-menu > li.active a{color:#0063d1;}
 .xs-menus .nav-menu > li > .nav-dropdown li a:hover,
@@ -574,8 +576,8 @@ to{opacity:1;}
 .xs-author-block .post-author .product-title.xs-round-avatar{font-size:1.28571em;margin-bottom:8px;}
 .product-stock{color:#bbbbbb;}
 .product-stock span{padding-left:5px;}
-.price{padding-left: 19px;color:#83b735;font-size:13px;}
-.price del{color:red;padding-left:5px;}
+.price{color:#FF3934;font-size:16px;font-weight: bold}
+.price del{color:#605050;padding-left:5px;}
 .price.highlight{display:block;font-weight:500;font-size:2.14286em;line-height:1;text-align:left;}
 .price.highlight del{padding-left:0;padding-bottom:5px;display:block;font-size:0.667em;font-weight:400;}
 .price.small{font-size:1em;}
@@ -862,7 +864,7 @@ label[for="xs-newsletter-email"]{display:block;position:absolute;top:-30px;margi
 .xs-content-header.background-version .xs-content-title{margin-top:0;color:#FFFFFF;font-size:1.28571em;}
 .xs-content-header.background-version .xs-custom-nav a{color:#FFFFFF;}
 .xs-deal-of-the-week{border:2px solid #0063d1;border-top:0;border-radius:0 0 4px 4px;}
-.xs-deal-blocks{padding-bottom:28px;}
+.xs-deal-blocks{padding-bottom:2px;}
 .xs-deal-blocks img{margin:0 auto 20px;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;opacity:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 .xs-deal-blocks:hover img{opacity:.7;}
 .xs-deal-blocks hr{border-color:#f4f4f4;margin-bottom:30px;margin-top:0;}
@@ -879,7 +881,11 @@ label[for="xs-newsletter-email"]{display:block;position:absolute;top:-30px;margi
 .product-available{font-size:0.85714em;}
 .xs-progress{height:10px;background-color:#f5f5f5;border-radius:5px;}
 .xs-progress .progress-bar{background-color:#83b735;border-radius:5px;}
-.countdow-timer h4{font-size:1em;color:#777777;font-weight:400;text-align:center;margin-bottom:20px;}
+.countdow-timer h4{font-size: 1em;
+    color: #777777;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;}
 .countdow-timer h4 span{font-weight:500;font-size:1.28571em;}
 .deal-of-the-week-v2 .background-version{background-color:transparent;border:2px solid #0063d1;border-bottom:0px solid #000;position:relative;}
 .deal-of-the-week-v2 .background-version::before{position:absolute;content:"";bottom:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);height:1px;width:calc(100% - 64px);background-color:#f4f4f4;}
@@ -1594,7 +1600,7 @@ body .xs-promo-popup .mfp-container{top:50%;-webkit-transform:translateY(-50%);-
 .product-thumbnail > a{display:inline-block;}
 .checkout-form-group .form-control{height:40px;}
 select.form-control:not([size]):not([multiple]){height:40px;}
-.xs-list li{margin-bottom:1px;}
+.xs-list li{margin-bottom:5px;}
 .xs-list li:last-child{margin-bottom:0;}
 .xs-list li a{color:#777777;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;}
 .xs-list li a:hover{color:#0063d1;}
@@ -1677,7 +1683,7 @@ select.form-control:not([size]):not([multiple]){height:40px;}
 .btn-cart.icon-right i{float:right;padding-left:7px;}
 .xs-best-deal-slider-content .xs-btn-wraper a:last-child{padding:18px 35px;}
 .w-quantity-btn .btn{margin:0 auto;}
-.xs-product-offer-label{width:100px;height:100px;border-radius:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border-radius:100%;background-color:#62ab00;color:#FFFFFF;}
+.xs-product-offer-label{width:100px;height:100px;border-radius:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border-radius:100%;background-color:#fed700;color:black;}
 .xs-product-offer-label span{font-weight:700;font-size:1.57143em;line-height:1;margin-bottom:4px;}
 .xs-product-offer-label small{font-size:1em;line-height:1;}
 .star-rating{position:relative;height:auto;width:100%;display:inline-block;}
@@ -1720,7 +1726,7 @@ img[src="assets/images/image_loader.gif"]{background-image:url(../images/ajax-lo
 .xs_input_number input[type="number"]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
 .xs-simple-btn{color:#0063d1;}
 .xs-countdown-timer{background-color: #3333;
-	padding: 9px;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+	padding: 9px;font-weight: bold;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
 .xs-countdown-timer .timer-count{width:40px;height:40px;line-height:42px;border-radius:100%;background-color:#f5f5f5;font-size:1em;font-weight:500;display:inline-block;margin-bottom:8px;}
 .xs-countdown-timer .timer-title{line-height:1;text-transform:uppercase;font-size:0.71429em;font-weight:400;display:block;}
 .xs-countdown-timer .xs-timer-container{margin-right:10px;}

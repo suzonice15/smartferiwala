@@ -72,12 +72,9 @@ $data['canonical']=base_url();
         $search_query = trim($this->input->post('search_query'));
         $search_query = strtolower($search_query);
         $discount = '';
-
         $result =get_result("SELECT * FROM product WHERE status=1 and
          sku LIKE '$search_query%' OR product_title LIKE '%$search_query%'  limit 0, 6");
         $html = '';
-
-
         //	echo $result->num_rows();
 
         if ($result) {
@@ -521,7 +518,7 @@ $data['canonical']=base_url();
 
         $uri_string = explode("/", uri_string());
         $product_name = end($uri_string);
-        $post = $this->MainModel->getSingleData('product_name', $product_name, 'product', 'product_availability,product_name,product_id,product_title,product_price,discount_price,product_description,sku,product_stock,product_of_size,product_color,discount_type,product_video,seo_title,seo_keywords,seo_content,product_terms,product_summary');
+        $post = $this->MainModel->getSingleData('product_name', $product_name, 'product', 'product_percent_tag,product_availability,product_name,product_id,product_title,product_price,discount_price,product_description,sku,product_stock,product_of_size,product_color,discount_type,product_video,seo_title,seo_keywords,seo_content,product_terms,product_summary');
 
         $data['prod_row'] = $post;
         $data['page_title'] = $post->product_title;

@@ -11,8 +11,8 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-define("SSLCZ_STORE_ID", "ekusheyshoplive");
-define("SSLCZ_STORE_PASSWD", "5E2545C6B779A67909");
+define("SSLCZ_STORE_ID", "smartferiwalalive");
+define("SSLCZ_STORE_PASSWD", "5FB4A0984D1CB30171");
 
 
 

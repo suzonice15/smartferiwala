@@ -79,6 +79,16 @@ $product_availabie = $product->product_availability;
 ">Out of Stock</p>
 
 <?php } ?>
+													<?php if($product->product_percent_tag>0) {?>
+														<span style="position: absolute;
+background: #f14705;
+font-size: 14px;
+top: 0;
+right: 0;
+padding: 2px 5px;
+color: #fff;
+z-index: 10;">-<?=$product->product_percent_tag?>%</span>
+													<?php }?>
  
                                                     <a href="<?= $link ?>">
                                                         <img

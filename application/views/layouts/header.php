@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ekushey Shop | admin panel </title>
+  <title>Smart Feriwala | admin panel </title>
 <!--	<link rel="icon" type="img/gif" href="--><?php //echo base_url()?><!--uploads/favicon.ico" sizes="16x16">-->
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">

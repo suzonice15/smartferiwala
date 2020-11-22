@@ -107,7 +107,17 @@ $summery = $prod_row->product_summary;
         <div class="row">
             <div id="desktop_picture" class="col-lg-4" style="margin-left: -55px;">
 
+				<?php if($prod_row->product_percent_tag>0) {?>
+				<span style="position: absolute;
+background: #f14705;
+font-size: 14px;
+top: 0;
+right: 0;
+padding: 2px 5px;
+color: #fff;
+z-index: 10;">-<?=$prod_row->product_percent_tag?>%</span>
 
+				<?php } ?>
                 <img width="100%" class="img-fluid" id="zoom_09" style="z-index: 999999" src="<?= $featured_image ?>"
                      alt="<?= $product_title ?>">
                 <div id="gallery_09">
@@ -189,25 +199,24 @@ $summery = $prod_row->product_summary;
                     </span>
                     <h6>Product Code: <?= $sku ?></h6>
                     <div class="availability in-stock">Availability: <span><?= $product_availability ?></span></div>
-					<span style="color:#00B050;font-size:23px;" class="price highlight">
-                        <del style="color:red">
-                            <?php
-                            if ($product_discount) {
-                                echo 'Regular Price:';
-                                ?><?= formatted_price($product_price) ?><?php
-                            }
-                            ?>
-                        </del>
+					<span style="color:#FF3E20;font-size:23px;" class="price">
 
-                        <?php if ($product_discount) { ?>
 
-                            Discounted  Price:
-                        <?php } else { ?>
-                            Regular Price:
-                        <?php } ?>
+
 
                         <?= formatted_price($sell_price) ?>
+
                     </span>
+					<span> <del style="color: #604747;
+font-weight: bold;
+font-size: 21px;">
+                            <?php
+							if ($product_discount) {
+
+								?><?= formatted_price($product_price) ?><?php
+							}
+							?>
+                        </del></span>
                     <?php
 
                     $summeryy = trim($prod_row->product_summary);
@@ -334,17 +343,17 @@ text-align: center;" name="quantity" class="form-control input-number" disabled 
 
                                                     <a
                                                         id="add_to_cart" href="javascript:void(0)"
-                                                        class="  add_to_cart"
+                                                        class="add_to_cart"
                                                         data-product_id="<?= $prod_row->product_id ?>"
                                                         data-product_price="<?= $sell_price ?>"
                                                         data-product_title="<?= $prod_row->product_title ?>">
-                                                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                                                        Add to Cart </a>
+														<i class="icon icon-bag"></i>
+                                                        Add to Cart  </a>
                                                     <a id="buy_now" href="javascript:void(0)" class="buy_now"
                                                        data-product_id="<?= $prod_row->product_id ?>"
                                                        data-product_price="<?= $sell_price ?>"
                                                        data-product_title="<?= $prod_row->product_title ?>">
-                                                        Buy Now </a>
+														<i class="icon icon-online-shopping-cart"></i>&nbsp; Buy Now  </a>
                                                 </div>
                                             </div>
                                         <?php endif;

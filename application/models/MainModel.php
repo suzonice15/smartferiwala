@@ -198,7 +198,7 @@ class MainModel extends CI_Model
     public function fetch_data($per_page, $start, $category_id, $sorting)
     {
 
-        $this->db->select('DISTINCT(product.product_id),product_title,product_price,discount_price,product_name,product_availability');
+        $this->db->select('DISTINCT(product.product_id),product_percent_tag,product_title,product_price,discount_price,product_name,product_availability');
         $this->db->join('term_relation', 'product.product_id = term_relation.product_id');
         $this->db->where('term_relation.term_id', $category_id);
             $this->db->where('product.status', 1);
@@ -268,7 +268,18 @@ class MainModel extends CI_Model
     z-index: 999;
 ">Out of Stock</p>';
 
- } 
+ }
+                 	if($row->product_percent_tag>0) {
+				$price_discount ='<span style="position: absolute;
+background: #f14705;
+font-size: 14px;
+top: 0;
+right: 0;
+padding: 2px 5px;
+color: #fff;
+z-index: 10;">-'.$row->product_percent_tag.'%</span>';
+
+				}
  
  if ($product_availabie != 'Out of stock') {
      
@@ -276,11 +287,11 @@ class MainModel extends CI_Model
 												
 														<a href="#" class="add_to_cart_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
-														   data-product_title="' . $row->product_title . '" ><i class="icon icon-online-shopping-cart"></i>    Add to Cart</a>
+														   data-product_title="' . $row->product_title . '" ><i class="icon icon-online-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
 												
 														<a href="#" class="buy_now_releted_product"
 														   data-product_id="' . $row->product_id . '" data-product_price="' . $sell_price . '"
-														   data-product_title="' . $row->product_title . '"><i class="icon icon-bag"></i>   Buy Now</a>
+														   data-product_title="' . $row->product_title . '"><i class="icon icon-bag"></i>&nbsp;&nbsp;Buy Now</a>
 					                           
 					</div>';
  }
@@ -295,15 +306,15 @@ class MainModel extends CI_Model
 
 						</div> 
 						'.$output_stock.'
-						<a href="' . $link . '"><img src="' . $featured_image . '" alt="' . $product_title . '" width="100%"></a>
+						<a href="' . $link . '">'.$price_discount.'<img src="' . $featured_image . '" alt="' . $product_title . '" width="100%"></a>
 						<div class="xs-product-content text-center">
                         <span class="product-categories">
                           
                         </span>
 							<h4 class="product-title"><a href="' . $link . '">' . $product_title . '</a></h4>
-							<span  style="color:#00B050" class="price">
+							<span  style="color:#FF3934" class="price">
                             ' . formatted_price($sell_price) . '
-                            <del style="color:red">' . $less_money . '</del>
+                            <del style="color:#605050">' . $less_money . '</del>
                         </span>
 						</div><!-- .xs-product-content END -->
 						'.$product_hover.'

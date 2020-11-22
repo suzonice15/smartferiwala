@@ -24,7 +24,7 @@ foreach ($home_cat_section as $home_cat) {
 
 
 					<?php
-					$catproducts = get_category_products($home_cat, 8);
+					$catproducts = get_category_products($home_cat, 15);
 
 
 					if (isset($catproducts)) {
@@ -38,8 +38,22 @@ foreach ($home_cat_section as $home_cat) {
 					}
 					?>
 					<div class="xs-product-wraper version-2">
-						<img src="<?=$featured_image?>" alt="Mobile">
+
+						<?php if($prod->product_percent_tag>0) {?>
+						<span style="position: absolute;
+background: #f14705;
+font-size: 14px;
+top: 0;
+right: 0;
+padding: 2px 5px;
+color: #fff;
+z-index: 10;">-<?=$prod->product_percent_tag?>%</span>
+							<?php }?>
+					<a href="<?=base_url() . 'product/' . $prod->product_name?>">	<img src="<?=$featured_image?>" alt="Mobile"></a>
 						<h4 class="product-title"><a href="<?=base_url() . 'product/' . $prod->product_name?>"><?=$prod->product_title?></a></h4>
+
+
+						<center>
 						<span class="price">
                                  <?= formatted_price($sell_price) ?>
 							<?php if($prod->discount_price != 0) {
@@ -49,6 +63,7 @@ foreach ($home_cat_section as $home_cat) {
 
 							<?php } ?>
                                 </span>
+						</center>
 
 						<div class="home_category_product_hover clearfix">
 
@@ -122,13 +137,7 @@ foreach ($home_cat_section as $home_cat) {
 			url: '<?php echo base_url()?>ajax/add_to_cart',
 			success: function (result) {
 
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
 				var total_result = JSON.parse(result);
 				$('.xs-item-count').text(total_result.cart_items);
 				$('#total_item_bag').text(total_result.cart_items);
@@ -169,13 +178,7 @@ foreach ($home_cat_section as $home_cat) {
 			},
 			url: '<?php echo base_url()?>ajax/add_to_cart',
 			success: function (result) {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'You have successfully added this product in your cart',
-					showConfirmButton: false,
-					timer:2500
-				})
+
 				var total_result = JSON.parse(result);
 
 				$('#shoping_bag .itemno').text(total_result);

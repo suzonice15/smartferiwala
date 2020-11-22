@@ -71,6 +71,7 @@
 			loop: true,
 			margin: 0,
 			responsiveClass: true,
+			autoplay:true,
 			responsive: {
 				0: {
 					items: 2,
@@ -83,7 +84,7 @@
 				1000: {
 					items: 6,
 					nav: true,
-					loop: false,
+					loop: true,
 					margin: 5
 				}
 			}
@@ -131,7 +132,7 @@
 						1000: {
 							items: 6,
 							nav: true,
-							loop: false,
+							loop: true,
 							margin: 5
 						}
 					}

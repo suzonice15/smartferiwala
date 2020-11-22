@@ -31,8 +31,23 @@ width: 200px;" >
 	</div>
 </div>
 
+<style>
+	.cat_class{
+		padding-left:65px;padding-right:65px;
+
+	}
+
+	@media only screen and (max-width: 600px) {
+		.cat_class {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+	}
+</style>
+
 <section class="xs-section-padding" style="padding-top: 5px">
-	<div class="container-fluid"  style="padding-left:65px;padding-right:65px;">
+	<div class="container-fluid cat_class"  >
 
 <span id="dynamic_content"></span>
 		<span class=" filter_data"></span>

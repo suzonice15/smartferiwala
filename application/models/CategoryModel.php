@@ -201,7 +201,7 @@ Class CategoryModel extends CI_Model
 
 
 
-		$this->db->select('distinct(product_name),product.product_id,product_title,product_price,discount_price,sku,product_stock,product_availability');
+		$this->db->select('distinct(product_name),product_percent_tag,product.product_id,product_title,product_price,discount_price,sku,product_stock,product_availability');
 		$this->db->from('product');
 		$this->db->join('term_relation', 'product.product_id = term_relation.product_id');
 		$this->db->where_in('term_relation.term_id', $category_id);

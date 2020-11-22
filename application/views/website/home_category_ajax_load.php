@@ -335,13 +335,13 @@ $featured_image = get_media_path($category_info->medium_banner);
 						   data-product_id="<?= $rel_prod->product_id ?>"
 						   data-product_price="<?= $sell_price ?>"
 						   data-product_title="<?= $_product_title ?>"><i
-								class="icon icon-online-shopping-cart"></i>Add to Cart</a>
+								class="icon icon-online-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
 
 						<a href="#" class="home_buy_now_releted_product"
 						   data-product_id="<?= $rel_prod->product_id ?>"
 						   data-product_price="<?= $sell_price ?>"
 						   data-product_title="<?= $_product_title ?>"><i
-								class="icon icon-bag"></i>Buy Now</a>
+								class="icon icon-bag"></i>&nbsp;&nbsp;Buy Now</a>
 
 					</div>
 				</div><!-- .xs-product-category text-center END -->

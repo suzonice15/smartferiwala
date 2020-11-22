@@ -29,7 +29,7 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
 
 <!-- hot sale section -->
-     <div class="container-fluid" style="padding-left: 51px;padding-right: 51px;">
+     <div class="container-fluid" style="padding-left: 51px;padding-right: 51px;margin-top: -28px;margin-bottom: 9px;" >
         <div class="row">
             <div class="col-lg-12">
                 <div class="xs-content-header">
@@ -107,28 +107,28 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
                                             </a>
                                             <div class="xs-product-offer-label">
                                                 <span><?php echo round($prod->product_percent_tag); ?>%</span>
-                                                <small>Offer</small>
+                                                <small>Off</small>
                                             </div>
                                             <div class="title-and-price">
                                                 <h4 class="product-title ">
                                                     <a
                                                        href="<?= $product_link ?>"><?= $_product_title ?></a>
                                                 </h4>
-												<span style="color:#00B050" class="price">
+												<span style="color:#FF3934" class="price">
                                             <?php echo formatted_price($sell_price); ?>
 
-                                                    <del style="color:red"> <?php
-                                                        if ($product_price > $sell_price) {
-                                                            echo formatted_price($product_price);
+                                                    <del style="color:#605050"> <?php
+														if ($product_price > $sell_price) {
+															echo formatted_price($product_price);
 
-                                                        } ?></del>
+														} ?></del>
                                         </span>
                                             </div>
                                             <div class="xs-deals-info">
    <?php if($prod->product_availability =='In stock') { ?>
 
                                                 <div class="hot_sell_offer">
-                                                    <a href="#"  style="margin-left: -141px;" class="btn btn-success btn-sm  add_to_cart col-4"
+                                                    <a href="#"  style="margin-left: -145px;" class="btn btn-success btn-sm  add_to_cart col-4"
                                                        data-product_id="<?= $prod->product_id ?>"
                                                        data-product_price="<?= $sell_price ?>"
                                                        data-product_title="<?= $prod->product_title ?>"><i
@@ -138,10 +138,10 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
                                             </div><!-- .xs-deals-info END -->
 
-                                            <div class="countdow-timer" style="margin-top: -30px;">
-<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+                                            <div class="countdow-timer" style="margin-top: -27px;">
+                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
 												<span class="xs-countdown-timer countdown"
-													  value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
+													  value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"> </span>
                                             </div><!-- .countdow-timer END -->
                                         </div>
                                     </div>
@@ -200,28 +200,28 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
                                                     style="width: 100%;"></a>
                                             <div class="xs-product-offer-label">
                                                 <span><?php echo round($prod->product_percent_tag); ?>%</span>
-                                                <small>Offer</small>
+                                                <small>Off</small>
                                             </div>
                                             <div class="title-and-price">
                                                 <h4 class="product-title">
                                                     <a
                                                        href="<?= $product_link ?>"><?= $_product_title ?></a>
                                                 </h4>
-												<span style="color:#00B050" class="price">
+												<span style="color:#FF3934" class="price">
                                             <?php echo formatted_price($sell_price); ?>
 
-                                                    <del style="color:red"> <?php
-                                                        if ($product_price > $sell_price) {
-                                                            echo formatted_price($product_price);
+                                                    <del style="color:#605050"> <?php
+														if ($product_price > $sell_price) {
+															echo formatted_price($product_price);
 
-                                                        } ?></del>
+														} ?></del>
                                         </span>
                                             </div>
                                             <div class="xs-deals-info">
    <?php if($prod->product_availability =='In stock') { ?>
 
                                                 <div class="hot_sell_offer">
-                                                    <a href="#" style="margin-left: -141px;" class="btn btn-success  btn-sm   add_to_cart"
+                                                    <a href="#" style="margin-left: -145px;" class="btn btn-success  btn-sm   add_to_cart"
                                                        data-product_id="<?= $prod->product_id ?>"
                                                        data-product_price="<?= $sell_price ?>"
                                                        data-product_title="<?= $prod->product_title ?>"><i
@@ -232,8 +232,8 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 <?php } ?>
                                             </div><!-- .xs-deals-info END -->
 
-                                            <div class="countdow-timer" style="margin-top: -30px;">
-<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+                                            <div class="countdow-timer" style="margin-top: -27px;">
+                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
 												<span class="xs-countdown-timer countdown"
 													  value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
                                             </div><!-- .countdow-timer END -->
@@ -246,8 +246,17 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
                     <div class="tab-pane fade show " id="hot-75off" role="tabpanel" aria-labelledby="hot-75off-tab">
                         <div class="row no-gutters">
-                            <?php if (isset($product25)) :
+                            <?php
+							$count=-1;
+							if (isset($product25)) :
                                 foreach ($product25 as $prod):
+
+                                $count++;
+                                if($count==5){
+									$class="margin-top:-34px";
+								}else {
+									$class="margin-top:-30px";
+								}
 
 
                                     $featured_image = get_product_meta($prod->product_id, 'featured_image');
@@ -294,17 +303,17 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
                                                     style="width: 100%;"></a>
                                             <div class="xs-product-offer-label">
                                                 <span><?php echo round($prod->product_percent_tag); ?>%</span>
-                                                <small>Offer</small>
+                                                <small>Off</small>
                                             </div>
                                             <div class="title-and-price">
                                                 <h4 class="product-title">
                                                     <a
                                                        href="<?= $product_link ?>"><?= $_product_title ?></a>
                                                 </h4>
-												<span style="color:#00B050" class="price">
+												<span style="color:#FF3934" class="price">
                                             <?php echo formatted_price($sell_price); ?>
 
-                                                    <del style="color:red"> <?php
+                                                    <del style="color:#605050"> <?php
                                                         if ($product_price > $sell_price) {
                                                             echo formatted_price($product_price);
 
@@ -315,7 +324,7 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 
    <?php if($prod->product_availability =='In stock') { ?>
                                                 <div class="hot_sell_offer">
-                                                    <a href="#" style="margin-left: -141px;" class="btn btn-success btn-sm   add_to_cart"
+                                                    <a href="#" style="margin-left: -145px;" class="btn btn-success btn-sm   add_to_cart"
                                                        data-product_id="<?= $prod->product_id ?>"
                                                        data-product_price="<?= $sell_price ?>"
                                                        data-product_title="<?= $prod->product_title ?>"><i
@@ -324,8 +333,8 @@ and discount_date_from <='$today' and discount_date_to >='$today' and status=1 o
 <?php } ?>
 
                                             </div><!-- .xs-deals-info END -->
-                                            <div class="countdow-timer" style="margin-top: -30px;">
-<!--                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>-->
+                                            <div class="countdow-timer" style="<?=$class?>">
+                                                <h4><span class="color-primary">Hurry up!</span> Offers ends in:</h4>
                                                 <span class="xs-countdown-timer countdown"
                                                     value="<?php echo date('Y-m-d', strtotime($prod->discount_date_to)) ?>"></span>
                                             </div><!-- .countdow-timer END -->

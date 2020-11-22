@@ -35,7 +35,7 @@
 <br>
 <div class="col-md-offset-4 col-md-4">
 	<div class="register-logo">
-		<a href="#"> Ekushey Shop Admin panel</a>
+		<a href="#">Smart feriwala Admin panel</a>
 	</div>
 
 	<div class="register-box-body " >

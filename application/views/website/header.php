@@ -103,7 +103,7 @@ foreach ($this->cart->contents() as $key => $val) {
 	}
 	.desktop_new_sticky_class{
 		position: fixed;
-		top: -4px;
+		top: -12px;
 	}
 	}
 
@@ -247,12 +247,15 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="col-lg-3 col-xl-3  d-none d-md-none d-lg-block">
 
 					<div class="cd-dropdown-wrapper xs-vartical-menu v-gray" id="sticy_menu_id">
-						<a class="cd-dropdown-trigger" href="#0">
+						<a style="background-color: #C3232A;
+    color: white;
+    padding: 19px;
+    border-bottom: 1px solid #C3232A;" class="cd-dropdown-trigger" href="#0">
 							<i class="fa fa-list-ul"></i> CATEGORIES
 						</a>
 						<nav  style="margin-top: -22px;" class="cd-dropdown top_sticky_category_menu" >
 							 
-							<a href="#0"  style="margin-left:-15px" class="cd-close">Close</a>
+							<a href="#0"  style="margin-left:-15px;color:white" class="cd-close">Close</a>
 
 
 <style>
@@ -368,12 +371,12 @@ foreach ($this->cart->contents() as $key => $val) {
 							</style>
 
 							<ul class="nav-menu top_menu_style">
-								 		<li><a href="<?php echo base_url(); ?>pages/contact-us">Follow us on Facebook</a>
-								<li><a href="<?php echo base_url(); ?>pages/affiliate-program">Watch Reviews on Youtube</a>
+								 		<li><a href="<?php echo get_option('facebook'); ?>">Follow us on Facebook</a>
+								<li><a href="<?php echo get_option('youtube'); ?>">Watch Reviews on Youtube</a>
 
 
 								</li>
-								<li><a href="<?php echo base_url(); ?>facebook">HOT Deals</a>
+								<li><a href="<?php echo base_url(); ?>category/hot-deals">HOT Deals</a>
 
 
 							</ul>
@@ -384,7 +387,9 @@ foreach ($this->cart->contents() as $key => $val) {
 				<div class="col-lg-3 col-xl-3 d-none d-md-none d-lg-block">
 
 
-						<p style="color: black;font-weight: bold;margin-top: 13px;margin-left: -61px;font-size: 15px;color: white;"><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif"><?=get_option('phone')?> (AM to 10 PM - Everyday)</p>
+						<p style="margin-left: -72px;
+    margin-top: 12px;
+" ><img style="width: 45px;" src="https://www.sohojbuy.com/public/call.gif"><span style="color: black;font-weight: bold;margin-top: 13px;margin-left: 0px;font-size: 15px;color: white;"><?=get_option('phone')?> </span><span style="color: black;margin-top: 13px;margin-left: 2px;font-size: 15px;color: white;">(10 AM to 10 PM - Everyday)</span></p>
 
 
 

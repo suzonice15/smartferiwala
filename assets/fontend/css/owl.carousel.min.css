@@ -75,7 +75,7 @@
 	user-select: none;
 	background-color: #C3232A !important;
 	color: white !important;
-	border: 1px solid #C3232A !important;
+	border: 1px solid white !important;
 }
 .owl-carousel .owl-dot {
 	cursor: pointer;

@@ -60,20 +60,30 @@ foreach ($related_products as $rel_prod) {
 
 <?php } ?>
             <a href="<?= $link ?>">
+				<?php if($rel_prod->product_percent_tag>0) {?>
+					<span style="position: absolute;
+background: #f14705;
+font-size: 14px;
+top: 0;
+right: 0;
+padding: 2px 5px;
+color: #fff;
+z-index: 10;">-<?=$rel_prod->product_percent_tag?>%</span>
+				<?php }?>
                 <img width="100%" src="<?= get_product_thumb($rel_prod->product_id, 'thumb') ?>"
                      alt="<?= $_product_title ?>">
             </a>
             <div class="xs-product-content text-center">
 
                 <h4 class="product-title"><a href="<?= $link ?>"><?= $_product_title ?></a></h4>
-							<span class="price" style="color:#00B050">
+							<span class="price" style="color:#FF3934">
 								<?= formatted_price($sell_price) ?>
 
                                 <?php
                                 if ($product_discount != 0)
                                 {
                                 ?>
-                                <del style="color:red"><?= formatted_price($product_sell) ?></del>
+                                <del style="color:#605050"><?= formatted_price($product_sell) ?></del>
                                 <?php
                                 }
                                 ?></del>
@@ -87,13 +97,13 @@ foreach ($related_products as $rel_prod) {
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
-                            class="icon icon-online-shopping-cart"></i>  Add to Cart</a>
+                            class="icon icon-online-shopping-cart"></i>&nbsp;&nbsp;  Add to Cart</a>
 
                     <a href="#" class="buy_now_releted_product"
                        data-product_id="<?= $rel_prod->product_id ?>"
                        data-product_price="<?= $sell_price ?>"
                        data-product_title="<?= $_product_title ?>"><i
-                            class="icon icon-bag"></i>  Buy Now</a>
+                            class="icon icon-bag"></i> &nbsp;&nbsp; Buy Now</a>
 
             </div>
             

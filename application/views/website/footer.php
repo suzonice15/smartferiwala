@@ -17,7 +17,7 @@
                 <div class="col-lg-12  col-md-12 row xs-footer-info-and-payment">
 
 					<div class=" col-lg-2 col-md-6  col-12 footer-widget">
-						<h5 style="margin-bottom: -3px;">Menu</h5>
+						<h5 style="margin-bottom:5px;">Menu</h5>
 
 						<ul class="xs-list" style="margin-bottom: 10px;">
 
@@ -39,7 +39,7 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/contact-us">Contact U
 					</div><!-- .footer-widget END -->
 
 					<div class=" col-lg-2 col-md-6 col-12 footer-widget">
-						<h5 style="margin-bottom: -3px;">Earn with us </h5>
+						<h5 style="margin-bottom: 5px;">Earn with us </h5>
 
 
 						<ul class="xs-list">
@@ -70,36 +70,16 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-faq">Affili
                                 <li>
                                     <a href="#">
                                         <img
-                                            src="<?php echo base_url() ?>images/bkashp.png"
-                                            style="height: 32px;border-radius: 7px;" alt="payment-icon-image">
+                                            src="<?php echo base_url() ?>images/footer-payment-banner.jpg"
+                                            alt="payment-icon-image">
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a href="#">
-                                        <img
-                                            src="<?php echo base_url() ?>images/roket.png"
-                                            style="height: 29px;border-radius: 7px;" alt="payment-icon-image">
-                                    </a>
-                                </li>
+                                
 
 
                             </ul><!-- .xs-payment-card END -->
-                            <div class="xs-footer-secure-info">
-                                <h6>	Verified by:</h6>
-                                <ul class="footer-secured-by-icons">
-                                    <li>
-                                        <img
-                                            src="https://wp.xpeedstudio.com/marketo/wp-content/uploads/2018/06/norton_av_logo1.png"
-                                            alt="norton">
-                                    </li>
-                                    <li>
-                                        <img
-                                            src="https://wp.xpeedstudio.com/marketo/wp-content/uploads/2018/06/mcAfee_logo1.png"
-                                            alt="mcafee">
-                                    </li>
-                                </ul>
-                            </div><!-- .xs-footer-secure-info END -->
+                            
                         </div>
                     </div><!-- .media END -->
 
@@ -107,11 +87,11 @@ line-height: inherit;" href="<?php echo base_url() ?>pages/affiliate-faq">Affili
 						<span class="icon icon-support color-yellow d-flex"></span>
 						<div class="media-body">
 							<h5>Got Question? Call us 24/7 <br><?= get_option('phone') ?></br></h5>
-							<address>House 13B, Block B <br/>
-								Second Colony, Mazar Road <br>
-								Dhaka-1216, Bangladesh
-
-							</address>
+<!--							<address>House 13B, Block B <br/>-->
+<!--								Second Colony, Mazar Road <br>-->
+<!--								Dhaka-1216, Bangladesh-->
+<!---->
+<!--							</address>-->
 							<p>E-mail: Support@smartferiwala.com</p>
 						</div>
 					</div><!-- .media END -->
